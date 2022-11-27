@@ -14,7 +14,7 @@ Imports:
 	parallel
 SystemRequirements:
 	java (>= 8)
-License: GPL (>= 2)
+License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
