@@ -21,7 +21,7 @@ setwd(r"(C:\Users\Conrad\OneDrive-SIU\OneDrive - Southern Illinois University\Zo
 # If the github install below doesn't work, use the above to install the local copy
 
 ## Install from Github using token to access private repository (expires after 90 days from Nov 27 2022)
-install_github("PopGen33/UCETools", auth_token = "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")
+install_github("PopGen33/UCETools")
 library(UCETools)
 
 ## Test help pages
