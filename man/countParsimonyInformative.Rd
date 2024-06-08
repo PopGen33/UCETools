@@ -4,12 +4,14 @@
 \alias{countParsimonyInformative}
 \title{Count Parsimony informative sites}
 \usage{
-countParsimonyInformative(DNAbinObj, calc = "absolute")
+countParsimonyInformative(DNAbinObj, calc = "absolute", useAmbiguity = FALSE)
 }
 \arguments{
 \item{DNAbinObj}{An alignment in the form of \link{ape}'s DNAbin}
 
 \item{calc}{A string indicating if the calculation should return the absolute count of parsimony informative sites ('absolute') or the percent of parsimony informative sites relative to the length of the alignment ('relative')}
+
+\item{useAmbiguity}{A logical indicating whether to account for IUPAC ambiguity codes (e.g. 'R' for A or G) when counting parsimony informative sites. If FALSE, they are ignored. If TRUE, ambiguity codes are accounted for (e.g. a column 'YYRR' is parsimony informative).\bold{This is an experimental feature. Please check that the values returned are what you expect.}}
 }
 \value{
 If calc is 'absolute', returns an integer count of parsimony informative sites in the alignment. If calc is 'relative', returns a numeric 0 <= n <= 1 representing the percent of parsimony informative sites relative to the length of the alignment
@@ -17,7 +19,10 @@ If calc is 'absolute', returns an integer count of parsimony informative sites i
 \description{
 Counts the parsimony informative sites in a single alignment. The input must be an alignment in the
 form of \link{ape}'s DNAbin object. This is primarily an internal function used by \link{getPisCounts}.
-Note that ambiguity codes are ignored! The only bases considered are the standard DNA bases: A, G, C, T
+Note that ambiguity codes are ignored by default. The only bases considered are the standard DNA bases: A, G, C, T
+I have added an experimental feature for including ambiguity codes in the counts following the comparison methods
+described in \href{https://emmanuelparadis.github.io/misc/BitLevelCodingScheme_20April2007.pdf}{the DNAbin description}.
+This allows for using this function with, for example, RY coded alignments.
 }
 \seealso{
 \link{getPisCounts} \link{getAlignmentsByPIS}

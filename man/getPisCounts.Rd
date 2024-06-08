@@ -8,6 +8,7 @@ getPisCounts(
   alignDir,
   ext,
   calc = "absolute",
+  useAmbiguity = FALSE,
   threads = detectCores(),
   format = "fasta"
 )
@@ -18,6 +19,8 @@ getPisCounts(
 \item{ext}{The file extension of the alignment files (e.g. "file.nexus" is matched by ext = "nexus"). If not set, all files in the directory are used.}
 
 \item{calc}{A string indicating if the calculation should return the absolute count of parsimony informative sites ('absolute') or the percent of parsimony informative sites relative to the length of the alignment ('relative')}
+
+\item{useAmbiguity}{A logical indicating whether to account for IUPAC ambiguity codes (e.g. 'R' for A or G) when counting parsimony informative sites. If FALSE, they are ignored. If TRUE, ambiguity codes are accounted for (e.g. a column 'YYRR' is parsimony informative).\bold{This is an experimental feature. Please check that the values returned are what you expect.}}
 
 \item{threads}{Number of simultaneous processes used for counting parsimony infomative sites. By
 default, this uses the number of cores returned by \link[parallel:detectCores]{parallel::detectCores}.}

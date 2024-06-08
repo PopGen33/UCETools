@@ -13,6 +13,7 @@
 #' @param alignDir Path to the directory containing alignment files
 #' @param ext The file extension of the alignment files (e.g. "file.nexus" is matched by ext = "nexus"). If not set, all files in the directory are used.
 #' @param calc A string indicating if the calculation should return the absolute count of parsimony informative sites ('absolute') or the percent of parsimony informative sites relative to the length of the alignment ('relative')
+#' @param useAmbiguity A logical indicating whether to account for IUPAC ambiguity codes (e.g. 'R' for A or G) when counting parsimony informative sites. If FALSE, they are ignored. If TRUE, ambiguity codes are accounted for (e.g. a column 'YYRR' is parsimony informative).\bold{This is an experimental feature. Please check that the values returned are what you expect.}
 #' @param threads Number of simultaneous processes used for counting parsimony infomative sites. By
 #' default, this uses the number of cores returned by [parallel::detectCores].
 #' @param format Either 'nexus' or 'fasta' indicating what format the alignments are stored in. The default is 'fasta'
@@ -28,7 +29,7 @@
 #'
 #' @export
 
-getPisCounts <- function(alignDir, ext, calc = "absolute", threads = detectCores(), format = "fasta"){
+getPisCounts <- function(alignDir, ext, calc = "absolute", useAmbiguity = FALSE, threads = detectCores(), format = "fasta"){
     ## Check inputs
     if(!dir.exists(alignDir)){
         stop("Alignment dirctory does not exist or is not a directory.")
@@ -61,7 +62,7 @@ getPisCounts <- function(alignDir, ext, calc = "absolute", threads = detectCores
     cat("Done.\n")
 
     cat("Counting Parsimony Informative Sites...")
-    pisCount <- parLapply(cl, DNAbin, countParsimonyInformative, calc = calc)
+    pisCount <- parLapply(cl, DNAbin, countParsimonyInformative, calc = calc, useAmbiguity = useAmbiguity)
     cat("Done.\n")
 
     cat("Getting Alignment Lengths...")
