@@ -1,0 +1,1604 @@
+#nexus
+begin sets;
+  charset simUCE1.fasta = UCE_aligns/simUCE1.fasta: ;
+  charset simUCE10.fasta = UCE_aligns/simUCE10.fasta: ;
+  charset simUCE100.fasta = UCE_aligns/simUCE100.fasta: ;
+  charset simUCE101.fasta = UCE_aligns/simUCE101.fasta: ;
+  charset simUCE102.fasta = UCE_aligns/simUCE102.fasta: ;
+  charset simUCE103.fasta = UCE_aligns/simUCE103.fasta: ;
+  charset simUCE104.fasta = UCE_aligns/simUCE104.fasta: ;
+  charset simUCE105.fasta = UCE_aligns/simUCE105.fasta: ;
+  charset simUCE106.fasta = UCE_aligns/simUCE106.fasta: ;
+  charset simUCE107.fasta = UCE_aligns/simUCE107.fasta: ;
+  charset simUCE108.fasta = UCE_aligns/simUCE108.fasta: ;
+  charset simUCE109.fasta = UCE_aligns/simUCE109.fasta: ;
+  charset simUCE11.fasta = UCE_aligns/simUCE11.fasta: ;
+  charset simUCE110.fasta = UCE_aligns/simUCE110.fasta: ;
+  charset simUCE111.fasta = UCE_aligns/simUCE111.fasta: ;
+  charset simUCE112.fasta = UCE_aligns/simUCE112.fasta: ;
+  charset simUCE113.fasta = UCE_aligns/simUCE113.fasta: ;
+  charset simUCE114.fasta = UCE_aligns/simUCE114.fasta: ;
+  charset simUCE115.fasta = UCE_aligns/simUCE115.fasta: ;
+  charset simUCE116.fasta = UCE_aligns/simUCE116.fasta: ;
+  charset simUCE117.fasta = UCE_aligns/simUCE117.fasta: ;
+  charset simUCE118.fasta = UCE_aligns/simUCE118.fasta: ;
+  charset simUCE119.fasta = UCE_aligns/simUCE119.fasta: ;
+  charset simUCE12.fasta = UCE_aligns/simUCE12.fasta: ;
+  charset simUCE120.fasta = UCE_aligns/simUCE120.fasta: ;
+  charset simUCE121.fasta = UCE_aligns/simUCE121.fasta: ;
+  charset simUCE122.fasta = UCE_aligns/simUCE122.fasta: ;
+  charset simUCE123.fasta = UCE_aligns/simUCE123.fasta: ;
+  charset simUCE124.fasta = UCE_aligns/simUCE124.fasta: ;
+  charset simUCE125.fasta = UCE_aligns/simUCE125.fasta: ;
+  charset simUCE126.fasta = UCE_aligns/simUCE126.fasta: ;
+  charset simUCE127.fasta = UCE_aligns/simUCE127.fasta: ;
+  charset simUCE128.fasta = UCE_aligns/simUCE128.fasta: ;
+  charset simUCE129.fasta = UCE_aligns/simUCE129.fasta: ;
+  charset simUCE13.fasta = UCE_aligns/simUCE13.fasta: ;
+  charset simUCE130.fasta = UCE_aligns/simUCE130.fasta: ;
+  charset simUCE131.fasta = UCE_aligns/simUCE131.fasta: ;
+  charset simUCE132.fasta = UCE_aligns/simUCE132.fasta: ;
+  charset simUCE133.fasta = UCE_aligns/simUCE133.fasta: ;
+  charset simUCE134.fasta = UCE_aligns/simUCE134.fasta: ;
+  charset simUCE135.fasta = UCE_aligns/simUCE135.fasta: ;
+  charset simUCE136.fasta = UCE_aligns/simUCE136.fasta: ;
+  charset simUCE137.fasta = UCE_aligns/simUCE137.fasta: ;
+  charset simUCE138.fasta = UCE_aligns/simUCE138.fasta: ;
+  charset simUCE139.fasta = UCE_aligns/simUCE139.fasta: ;
+  charset simUCE14.fasta = UCE_aligns/simUCE14.fasta: ;
+  charset simUCE140.fasta = UCE_aligns/simUCE140.fasta: ;
+  charset simUCE141.fasta = UCE_aligns/simUCE141.fasta: ;
+  charset simUCE142.fasta = UCE_aligns/simUCE142.fasta: ;
+  charset simUCE143.fasta = UCE_aligns/simUCE143.fasta: ;
+  charset simUCE144.fasta = UCE_aligns/simUCE144.fasta: ;
+  charset simUCE145.fasta = UCE_aligns/simUCE145.fasta: ;
+  charset simUCE146.fasta = UCE_aligns/simUCE146.fasta: ;
+  charset simUCE147.fasta = UCE_aligns/simUCE147.fasta: ;
+  charset simUCE148.fasta = UCE_aligns/simUCE148.fasta: ;
+  charset simUCE149.fasta = UCE_aligns/simUCE149.fasta: ;
+  charset simUCE15.fasta = UCE_aligns/simUCE15.fasta: ;
+  charset simUCE150.fasta = UCE_aligns/simUCE150.fasta: ;
+  charset simUCE151.fasta = UCE_aligns/simUCE151.fasta: ;
+  charset simUCE152.fasta = UCE_aligns/simUCE152.fasta: ;
+  charset simUCE153.fasta = UCE_aligns/simUCE153.fasta: ;
+  charset simUCE154.fasta = UCE_aligns/simUCE154.fasta: ;
+  charset simUCE155.fasta = UCE_aligns/simUCE155.fasta: ;
+  charset simUCE156.fasta = UCE_aligns/simUCE156.fasta: ;
+  charset simUCE157.fasta = UCE_aligns/simUCE157.fasta: ;
+  charset simUCE158.fasta = UCE_aligns/simUCE158.fasta: ;
+  charset simUCE159.fasta = UCE_aligns/simUCE159.fasta: ;
+  charset simUCE16.fasta = UCE_aligns/simUCE16.fasta: ;
+  charset simUCE160.fasta = UCE_aligns/simUCE160.fasta: ;
+  charset simUCE161.fasta = UCE_aligns/simUCE161.fasta: ;
+  charset simUCE162.fasta = UCE_aligns/simUCE162.fasta: ;
+  charset simUCE163.fasta = UCE_aligns/simUCE163.fasta: ;
+  charset simUCE164.fasta = UCE_aligns/simUCE164.fasta: ;
+  charset simUCE165.fasta = UCE_aligns/simUCE165.fasta: ;
+  charset simUCE166.fasta = UCE_aligns/simUCE166.fasta: ;
+  charset simUCE167.fasta = UCE_aligns/simUCE167.fasta: ;
+  charset simUCE168.fasta = UCE_aligns/simUCE168.fasta: ;
+  charset simUCE169.fasta = UCE_aligns/simUCE169.fasta: ;
+  charset simUCE17.fasta = UCE_aligns/simUCE17.fasta: ;
+  charset simUCE170.fasta = UCE_aligns/simUCE170.fasta: ;
+  charset simUCE171.fasta = UCE_aligns/simUCE171.fasta: ;
+  charset simUCE172.fasta = UCE_aligns/simUCE172.fasta: ;
+  charset simUCE173.fasta = UCE_aligns/simUCE173.fasta: ;
+  charset simUCE174.fasta = UCE_aligns/simUCE174.fasta: ;
+  charset simUCE175.fasta = UCE_aligns/simUCE175.fasta: ;
+  charset simUCE176.fasta = UCE_aligns/simUCE176.fasta: ;
+  charset simUCE177.fasta = UCE_aligns/simUCE177.fasta: ;
+  charset simUCE178.fasta = UCE_aligns/simUCE178.fasta: ;
+  charset simUCE179.fasta = UCE_aligns/simUCE179.fasta: ;
+  charset simUCE18.fasta = UCE_aligns/simUCE18.fasta: ;
+  charset simUCE180.fasta = UCE_aligns/simUCE180.fasta: ;
+  charset simUCE181.fasta = UCE_aligns/simUCE181.fasta: ;
+  charset simUCE182.fasta = UCE_aligns/simUCE182.fasta: ;
+  charset simUCE183.fasta = UCE_aligns/simUCE183.fasta: ;
+  charset simUCE184.fasta = UCE_aligns/simUCE184.fasta: ;
+  charset simUCE185.fasta = UCE_aligns/simUCE185.fasta: ;
+  charset simUCE186.fasta = UCE_aligns/simUCE186.fasta: ;
+  charset simUCE187.fasta = UCE_aligns/simUCE187.fasta: ;
+  charset simUCE188.fasta = UCE_aligns/simUCE188.fasta: ;
+  charset simUCE189.fasta = UCE_aligns/simUCE189.fasta: ;
+  charset simUCE19.fasta = UCE_aligns/simUCE19.fasta: ;
+  charset simUCE190.fasta = UCE_aligns/simUCE190.fasta: ;
+  charset simUCE191.fasta = UCE_aligns/simUCE191.fasta: ;
+  charset simUCE192.fasta = UCE_aligns/simUCE192.fasta: ;
+  charset simUCE193.fasta = UCE_aligns/simUCE193.fasta: ;
+  charset simUCE194.fasta = UCE_aligns/simUCE194.fasta: ;
+  charset simUCE195.fasta = UCE_aligns/simUCE195.fasta: ;
+  charset simUCE196.fasta = UCE_aligns/simUCE196.fasta: ;
+  charset simUCE197.fasta = UCE_aligns/simUCE197.fasta: ;
+  charset simUCE198.fasta = UCE_aligns/simUCE198.fasta: ;
+  charset simUCE199.fasta = UCE_aligns/simUCE199.fasta: ;
+  charset simUCE2.fasta = UCE_aligns/simUCE2.fasta: ;
+  charset simUCE20.fasta = UCE_aligns/simUCE20.fasta: ;
+  charset simUCE200.fasta = UCE_aligns/simUCE200.fasta: ;
+  charset simUCE201.fasta = UCE_aligns/simUCE201.fasta: ;
+  charset simUCE202.fasta = UCE_aligns/simUCE202.fasta: ;
+  charset simUCE203.fasta = UCE_aligns/simUCE203.fasta: ;
+  charset simUCE204.fasta = UCE_aligns/simUCE204.fasta: ;
+  charset simUCE205.fasta = UCE_aligns/simUCE205.fasta: ;
+  charset simUCE206.fasta = UCE_aligns/simUCE206.fasta: ;
+  charset simUCE207.fasta = UCE_aligns/simUCE207.fasta: ;
+  charset simUCE208.fasta = UCE_aligns/simUCE208.fasta: ;
+  charset simUCE209.fasta = UCE_aligns/simUCE209.fasta: ;
+  charset simUCE21.fasta = UCE_aligns/simUCE21.fasta: ;
+  charset simUCE210.fasta = UCE_aligns/simUCE210.fasta: ;
+  charset simUCE211.fasta = UCE_aligns/simUCE211.fasta: ;
+  charset simUCE212.fasta = UCE_aligns/simUCE212.fasta: ;
+  charset simUCE213.fasta = UCE_aligns/simUCE213.fasta: ;
+  charset simUCE214.fasta = UCE_aligns/simUCE214.fasta: ;
+  charset simUCE215.fasta = UCE_aligns/simUCE215.fasta: ;
+  charset simUCE216.fasta = UCE_aligns/simUCE216.fasta: ;
+  charset simUCE217.fasta = UCE_aligns/simUCE217.fasta: ;
+  charset simUCE218.fasta = UCE_aligns/simUCE218.fasta: ;
+  charset simUCE219.fasta = UCE_aligns/simUCE219.fasta: ;
+  charset simUCE22.fasta = UCE_aligns/simUCE22.fasta: ;
+  charset simUCE220.fasta = UCE_aligns/simUCE220.fasta: ;
+  charset simUCE221.fasta = UCE_aligns/simUCE221.fasta: ;
+  charset simUCE222.fasta = UCE_aligns/simUCE222.fasta: ;
+  charset simUCE223.fasta = UCE_aligns/simUCE223.fasta: ;
+  charset simUCE224.fasta = UCE_aligns/simUCE224.fasta: ;
+  charset simUCE225.fasta = UCE_aligns/simUCE225.fasta: ;
+  charset simUCE226.fasta = UCE_aligns/simUCE226.fasta: ;
+  charset simUCE227.fasta = UCE_aligns/simUCE227.fasta: ;
+  charset simUCE228.fasta = UCE_aligns/simUCE228.fasta: ;
+  charset simUCE229.fasta = UCE_aligns/simUCE229.fasta: ;
+  charset simUCE23.fasta = UCE_aligns/simUCE23.fasta: ;
+  charset simUCE230.fasta = UCE_aligns/simUCE230.fasta: ;
+  charset simUCE231.fasta = UCE_aligns/simUCE231.fasta: ;
+  charset simUCE232.fasta = UCE_aligns/simUCE232.fasta: ;
+  charset simUCE233.fasta = UCE_aligns/simUCE233.fasta: ;
+  charset simUCE234.fasta = UCE_aligns/simUCE234.fasta: ;
+  charset simUCE235.fasta = UCE_aligns/simUCE235.fasta: ;
+  charset simUCE236.fasta = UCE_aligns/simUCE236.fasta: ;
+  charset simUCE237.fasta = UCE_aligns/simUCE237.fasta: ;
+  charset simUCE238.fasta = UCE_aligns/simUCE238.fasta: ;
+  charset simUCE239.fasta = UCE_aligns/simUCE239.fasta: ;
+  charset simUCE24.fasta = UCE_aligns/simUCE24.fasta: ;
+  charset simUCE240.fasta = UCE_aligns/simUCE240.fasta: ;
+  charset simUCE241.fasta = UCE_aligns/simUCE241.fasta: ;
+  charset simUCE242.fasta = UCE_aligns/simUCE242.fasta: ;
+  charset simUCE243.fasta = UCE_aligns/simUCE243.fasta: ;
+  charset simUCE244.fasta = UCE_aligns/simUCE244.fasta: ;
+  charset simUCE245.fasta = UCE_aligns/simUCE245.fasta: ;
+  charset simUCE246.fasta = UCE_aligns/simUCE246.fasta: ;
+  charset simUCE247.fasta = UCE_aligns/simUCE247.fasta: ;
+  charset simUCE248.fasta = UCE_aligns/simUCE248.fasta: ;
+  charset simUCE249.fasta = UCE_aligns/simUCE249.fasta: ;
+  charset simUCE25.fasta = UCE_aligns/simUCE25.fasta: ;
+  charset simUCE250.fasta = UCE_aligns/simUCE250.fasta: ;
+  charset simUCE251.fasta = UCE_aligns/simUCE251.fasta: ;
+  charset simUCE252.fasta = UCE_aligns/simUCE252.fasta: ;
+  charset simUCE253.fasta = UCE_aligns/simUCE253.fasta: ;
+  charset simUCE254.fasta = UCE_aligns/simUCE254.fasta: ;
+  charset simUCE255.fasta = UCE_aligns/simUCE255.fasta: ;
+  charset simUCE256.fasta = UCE_aligns/simUCE256.fasta: ;
+  charset simUCE257.fasta = UCE_aligns/simUCE257.fasta: ;
+  charset simUCE258.fasta = UCE_aligns/simUCE258.fasta: ;
+  charset simUCE259.fasta = UCE_aligns/simUCE259.fasta: ;
+  charset simUCE26.fasta = UCE_aligns/simUCE26.fasta: ;
+  charset simUCE260.fasta = UCE_aligns/simUCE260.fasta: ;
+  charset simUCE261.fasta = UCE_aligns/simUCE261.fasta: ;
+  charset simUCE262.fasta = UCE_aligns/simUCE262.fasta: ;
+  charset simUCE263.fasta = UCE_aligns/simUCE263.fasta: ;
+  charset simUCE264.fasta = UCE_aligns/simUCE264.fasta: ;
+  charset simUCE265.fasta = UCE_aligns/simUCE265.fasta: ;
+  charset simUCE266.fasta = UCE_aligns/simUCE266.fasta: ;
+  charset simUCE267.fasta = UCE_aligns/simUCE267.fasta: ;
+  charset simUCE268.fasta = UCE_aligns/simUCE268.fasta: ;
+  charset simUCE269.fasta = UCE_aligns/simUCE269.fasta: ;
+  charset simUCE27.fasta = UCE_aligns/simUCE27.fasta: ;
+  charset simUCE270.fasta = UCE_aligns/simUCE270.fasta: ;
+  charset simUCE271.fasta = UCE_aligns/simUCE271.fasta: ;
+  charset simUCE272.fasta = UCE_aligns/simUCE272.fasta: ;
+  charset simUCE273.fasta = UCE_aligns/simUCE273.fasta: ;
+  charset simUCE274.fasta = UCE_aligns/simUCE274.fasta: ;
+  charset simUCE275.fasta = UCE_aligns/simUCE275.fasta: ;
+  charset simUCE276.fasta = UCE_aligns/simUCE276.fasta: ;
+  charset simUCE277.fasta = UCE_aligns/simUCE277.fasta: ;
+  charset simUCE278.fasta = UCE_aligns/simUCE278.fasta: ;
+  charset simUCE279.fasta = UCE_aligns/simUCE279.fasta: ;
+  charset simUCE28.fasta = UCE_aligns/simUCE28.fasta: ;
+  charset simUCE280.fasta = UCE_aligns/simUCE280.fasta: ;
+  charset simUCE281.fasta = UCE_aligns/simUCE281.fasta: ;
+  charset simUCE282.fasta = UCE_aligns/simUCE282.fasta: ;
+  charset simUCE283.fasta = UCE_aligns/simUCE283.fasta: ;
+  charset simUCE284.fasta = UCE_aligns/simUCE284.fasta: ;
+  charset simUCE285.fasta = UCE_aligns/simUCE285.fasta: ;
+  charset simUCE286.fasta = UCE_aligns/simUCE286.fasta: ;
+  charset simUCE287.fasta = UCE_aligns/simUCE287.fasta: ;
+  charset simUCE288.fasta = UCE_aligns/simUCE288.fasta: ;
+  charset simUCE289.fasta = UCE_aligns/simUCE289.fasta: ;
+  charset simUCE29.fasta = UCE_aligns/simUCE29.fasta: ;
+  charset simUCE290.fasta = UCE_aligns/simUCE290.fasta: ;
+  charset simUCE291.fasta = UCE_aligns/simUCE291.fasta: ;
+  charset simUCE292.fasta = UCE_aligns/simUCE292.fasta: ;
+  charset simUCE293.fasta = UCE_aligns/simUCE293.fasta: ;
+  charset simUCE294.fasta = UCE_aligns/simUCE294.fasta: ;
+  charset simUCE295.fasta = UCE_aligns/simUCE295.fasta: ;
+  charset simUCE296.fasta = UCE_aligns/simUCE296.fasta: ;
+  charset simUCE297.fasta = UCE_aligns/simUCE297.fasta: ;
+  charset simUCE298.fasta = UCE_aligns/simUCE298.fasta: ;
+  charset simUCE299.fasta = UCE_aligns/simUCE299.fasta: ;
+  charset simUCE3.fasta = UCE_aligns/simUCE3.fasta: ;
+  charset simUCE30.fasta = UCE_aligns/simUCE30.fasta: ;
+  charset simUCE300.fasta = UCE_aligns/simUCE300.fasta: ;
+  charset simUCE301.fasta = UCE_aligns/simUCE301.fasta: ;
+  charset simUCE302.fasta = UCE_aligns/simUCE302.fasta: ;
+  charset simUCE303.fasta = UCE_aligns/simUCE303.fasta: ;
+  charset simUCE304.fasta = UCE_aligns/simUCE304.fasta: ;
+  charset simUCE305.fasta = UCE_aligns/simUCE305.fasta: ;
+  charset simUCE306.fasta = UCE_aligns/simUCE306.fasta: ;
+  charset simUCE307.fasta = UCE_aligns/simUCE307.fasta: ;
+  charset simUCE308.fasta = UCE_aligns/simUCE308.fasta: ;
+  charset simUCE309.fasta = UCE_aligns/simUCE309.fasta: ;
+  charset simUCE31.fasta = UCE_aligns/simUCE31.fasta: ;
+  charset simUCE310.fasta = UCE_aligns/simUCE310.fasta: ;
+  charset simUCE311.fasta = UCE_aligns/simUCE311.fasta: ;
+  charset simUCE312.fasta = UCE_aligns/simUCE312.fasta: ;
+  charset simUCE313.fasta = UCE_aligns/simUCE313.fasta: ;
+  charset simUCE314.fasta = UCE_aligns/simUCE314.fasta: ;
+  charset simUCE315.fasta = UCE_aligns/simUCE315.fasta: ;
+  charset simUCE316.fasta = UCE_aligns/simUCE316.fasta: ;
+  charset simUCE317.fasta = UCE_aligns/simUCE317.fasta: ;
+  charset simUCE318.fasta = UCE_aligns/simUCE318.fasta: ;
+  charset simUCE319.fasta = UCE_aligns/simUCE319.fasta: ;
+  charset simUCE32.fasta = UCE_aligns/simUCE32.fasta: ;
+  charset simUCE320.fasta = UCE_aligns/simUCE320.fasta: ;
+  charset simUCE321.fasta = UCE_aligns/simUCE321.fasta: ;
+  charset simUCE322.fasta = UCE_aligns/simUCE322.fasta: ;
+  charset simUCE323.fasta = UCE_aligns/simUCE323.fasta: ;
+  charset simUCE324.fasta = UCE_aligns/simUCE324.fasta: ;
+  charset simUCE325.fasta = UCE_aligns/simUCE325.fasta: ;
+  charset simUCE326.fasta = UCE_aligns/simUCE326.fasta: ;
+  charset simUCE327.fasta = UCE_aligns/simUCE327.fasta: ;
+  charset simUCE328.fasta = UCE_aligns/simUCE328.fasta: ;
+  charset simUCE329.fasta = UCE_aligns/simUCE329.fasta: ;
+  charset simUCE33.fasta = UCE_aligns/simUCE33.fasta: ;
+  charset simUCE330.fasta = UCE_aligns/simUCE330.fasta: ;
+  charset simUCE331.fasta = UCE_aligns/simUCE331.fasta: ;
+  charset simUCE332.fasta = UCE_aligns/simUCE332.fasta: ;
+  charset simUCE333.fasta = UCE_aligns/simUCE333.fasta: ;
+  charset simUCE334.fasta = UCE_aligns/simUCE334.fasta: ;
+  charset simUCE335.fasta = UCE_aligns/simUCE335.fasta: ;
+  charset simUCE336.fasta = UCE_aligns/simUCE336.fasta: ;
+  charset simUCE337.fasta = UCE_aligns/simUCE337.fasta: ;
+  charset simUCE338.fasta = UCE_aligns/simUCE338.fasta: ;
+  charset simUCE339.fasta = UCE_aligns/simUCE339.fasta: ;
+  charset simUCE34.fasta = UCE_aligns/simUCE34.fasta: ;
+  charset simUCE340.fasta = UCE_aligns/simUCE340.fasta: ;
+  charset simUCE341.fasta = UCE_aligns/simUCE341.fasta: ;
+  charset simUCE342.fasta = UCE_aligns/simUCE342.fasta: ;
+  charset simUCE343.fasta = UCE_aligns/simUCE343.fasta: ;
+  charset simUCE344.fasta = UCE_aligns/simUCE344.fasta: ;
+  charset simUCE345.fasta = UCE_aligns/simUCE345.fasta: ;
+  charset simUCE346.fasta = UCE_aligns/simUCE346.fasta: ;
+  charset simUCE347.fasta = UCE_aligns/simUCE347.fasta: ;
+  charset simUCE348.fasta = UCE_aligns/simUCE348.fasta: ;
+  charset simUCE349.fasta = UCE_aligns/simUCE349.fasta: ;
+  charset simUCE35.fasta = UCE_aligns/simUCE35.fasta: ;
+  charset simUCE350.fasta = UCE_aligns/simUCE350.fasta: ;
+  charset simUCE351.fasta = UCE_aligns/simUCE351.fasta: ;
+  charset simUCE352.fasta = UCE_aligns/simUCE352.fasta: ;
+  charset simUCE353.fasta = UCE_aligns/simUCE353.fasta: ;
+  charset simUCE354.fasta = UCE_aligns/simUCE354.fasta: ;
+  charset simUCE355.fasta = UCE_aligns/simUCE355.fasta: ;
+  charset simUCE356.fasta = UCE_aligns/simUCE356.fasta: ;
+  charset simUCE357.fasta = UCE_aligns/simUCE357.fasta: ;
+  charset simUCE358.fasta = UCE_aligns/simUCE358.fasta: ;
+  charset simUCE359.fasta = UCE_aligns/simUCE359.fasta: ;
+  charset simUCE36.fasta = UCE_aligns/simUCE36.fasta: ;
+  charset simUCE360.fasta = UCE_aligns/simUCE360.fasta: ;
+  charset simUCE361.fasta = UCE_aligns/simUCE361.fasta: ;
+  charset simUCE362.fasta = UCE_aligns/simUCE362.fasta: ;
+  charset simUCE363.fasta = UCE_aligns/simUCE363.fasta: ;
+  charset simUCE364.fasta = UCE_aligns/simUCE364.fasta: ;
+  charset simUCE365.fasta = UCE_aligns/simUCE365.fasta: ;
+  charset simUCE366.fasta = UCE_aligns/simUCE366.fasta: ;
+  charset simUCE367.fasta = UCE_aligns/simUCE367.fasta: ;
+  charset simUCE368.fasta = UCE_aligns/simUCE368.fasta: ;
+  charset simUCE369.fasta = UCE_aligns/simUCE369.fasta: ;
+  charset simUCE37.fasta = UCE_aligns/simUCE37.fasta: ;
+  charset simUCE370.fasta = UCE_aligns/simUCE370.fasta: ;
+  charset simUCE371.fasta = UCE_aligns/simUCE371.fasta: ;
+  charset simUCE372.fasta = UCE_aligns/simUCE372.fasta: ;
+  charset simUCE373.fasta = UCE_aligns/simUCE373.fasta: ;
+  charset simUCE374.fasta = UCE_aligns/simUCE374.fasta: ;
+  charset simUCE375.fasta = UCE_aligns/simUCE375.fasta: ;
+  charset simUCE376.fasta = UCE_aligns/simUCE376.fasta: ;
+  charset simUCE377.fasta = UCE_aligns/simUCE377.fasta: ;
+  charset simUCE378.fasta = UCE_aligns/simUCE378.fasta: ;
+  charset simUCE379.fasta = UCE_aligns/simUCE379.fasta: ;
+  charset simUCE38.fasta = UCE_aligns/simUCE38.fasta: ;
+  charset simUCE380.fasta = UCE_aligns/simUCE380.fasta: ;
+  charset simUCE381.fasta = UCE_aligns/simUCE381.fasta: ;
+  charset simUCE382.fasta = UCE_aligns/simUCE382.fasta: ;
+  charset simUCE383.fasta = UCE_aligns/simUCE383.fasta: ;
+  charset simUCE384.fasta = UCE_aligns/simUCE384.fasta: ;
+  charset simUCE385.fasta = UCE_aligns/simUCE385.fasta: ;
+  charset simUCE386.fasta = UCE_aligns/simUCE386.fasta: ;
+  charset simUCE387.fasta = UCE_aligns/simUCE387.fasta: ;
+  charset simUCE388.fasta = UCE_aligns/simUCE388.fasta: ;
+  charset simUCE389.fasta = UCE_aligns/simUCE389.fasta: ;
+  charset simUCE39.fasta = UCE_aligns/simUCE39.fasta: ;
+  charset simUCE390.fasta = UCE_aligns/simUCE390.fasta: ;
+  charset simUCE391.fasta = UCE_aligns/simUCE391.fasta: ;
+  charset simUCE392.fasta = UCE_aligns/simUCE392.fasta: ;
+  charset simUCE393.fasta = UCE_aligns/simUCE393.fasta: ;
+  charset simUCE394.fasta = UCE_aligns/simUCE394.fasta: ;
+  charset simUCE395.fasta = UCE_aligns/simUCE395.fasta: ;
+  charset simUCE396.fasta = UCE_aligns/simUCE396.fasta: ;
+  charset simUCE397.fasta = UCE_aligns/simUCE397.fasta: ;
+  charset simUCE398.fasta = UCE_aligns/simUCE398.fasta: ;
+  charset simUCE399.fasta = UCE_aligns/simUCE399.fasta: ;
+  charset simUCE4.fasta = UCE_aligns/simUCE4.fasta: ;
+  charset simUCE40.fasta = UCE_aligns/simUCE40.fasta: ;
+  charset simUCE400.fasta = UCE_aligns/simUCE400.fasta: ;
+  charset simUCE401.fasta = UCE_aligns/simUCE401.fasta: ;
+  charset simUCE402.fasta = UCE_aligns/simUCE402.fasta: ;
+  charset simUCE403.fasta = UCE_aligns/simUCE403.fasta: ;
+  charset simUCE404.fasta = UCE_aligns/simUCE404.fasta: ;
+  charset simUCE405.fasta = UCE_aligns/simUCE405.fasta: ;
+  charset simUCE406.fasta = UCE_aligns/simUCE406.fasta: ;
+  charset simUCE407.fasta = UCE_aligns/simUCE407.fasta: ;
+  charset simUCE408.fasta = UCE_aligns/simUCE408.fasta: ;
+  charset simUCE409.fasta = UCE_aligns/simUCE409.fasta: ;
+  charset simUCE41.fasta = UCE_aligns/simUCE41.fasta: ;
+  charset simUCE410.fasta = UCE_aligns/simUCE410.fasta: ;
+  charset simUCE411.fasta = UCE_aligns/simUCE411.fasta: ;
+  charset simUCE412.fasta = UCE_aligns/simUCE412.fasta: ;
+  charset simUCE413.fasta = UCE_aligns/simUCE413.fasta: ;
+  charset simUCE414.fasta = UCE_aligns/simUCE414.fasta: ;
+  charset simUCE415.fasta = UCE_aligns/simUCE415.fasta: ;
+  charset simUCE416.fasta = UCE_aligns/simUCE416.fasta: ;
+  charset simUCE417.fasta = UCE_aligns/simUCE417.fasta: ;
+  charset simUCE418.fasta = UCE_aligns/simUCE418.fasta: ;
+  charset simUCE419.fasta = UCE_aligns/simUCE419.fasta: ;
+  charset simUCE42.fasta = UCE_aligns/simUCE42.fasta: ;
+  charset simUCE420.fasta = UCE_aligns/simUCE420.fasta: ;
+  charset simUCE421.fasta = UCE_aligns/simUCE421.fasta: ;
+  charset simUCE422.fasta = UCE_aligns/simUCE422.fasta: ;
+  charset simUCE423.fasta = UCE_aligns/simUCE423.fasta: ;
+  charset simUCE424.fasta = UCE_aligns/simUCE424.fasta: ;
+  charset simUCE425.fasta = UCE_aligns/simUCE425.fasta: ;
+  charset simUCE426.fasta = UCE_aligns/simUCE426.fasta: ;
+  charset simUCE427.fasta = UCE_aligns/simUCE427.fasta: ;
+  charset simUCE428.fasta = UCE_aligns/simUCE428.fasta: ;
+  charset simUCE429.fasta = UCE_aligns/simUCE429.fasta: ;
+  charset simUCE43.fasta = UCE_aligns/simUCE43.fasta: ;
+  charset simUCE430.fasta = UCE_aligns/simUCE430.fasta: ;
+  charset simUCE431.fasta = UCE_aligns/simUCE431.fasta: ;
+  charset simUCE432.fasta = UCE_aligns/simUCE432.fasta: ;
+  charset simUCE433.fasta = UCE_aligns/simUCE433.fasta: ;
+  charset simUCE434.fasta = UCE_aligns/simUCE434.fasta: ;
+  charset simUCE435.fasta = UCE_aligns/simUCE435.fasta: ;
+  charset simUCE436.fasta = UCE_aligns/simUCE436.fasta: ;
+  charset simUCE437.fasta = UCE_aligns/simUCE437.fasta: ;
+  charset simUCE438.fasta = UCE_aligns/simUCE438.fasta: ;
+  charset simUCE439.fasta = UCE_aligns/simUCE439.fasta: ;
+  charset simUCE44.fasta = UCE_aligns/simUCE44.fasta: ;
+  charset simUCE440.fasta = UCE_aligns/simUCE440.fasta: ;
+  charset simUCE441.fasta = UCE_aligns/simUCE441.fasta: ;
+  charset simUCE442.fasta = UCE_aligns/simUCE442.fasta: ;
+  charset simUCE443.fasta = UCE_aligns/simUCE443.fasta: ;
+  charset simUCE444.fasta = UCE_aligns/simUCE444.fasta: ;
+  charset simUCE445.fasta = UCE_aligns/simUCE445.fasta: ;
+  charset simUCE446.fasta = UCE_aligns/simUCE446.fasta: ;
+  charset simUCE447.fasta = UCE_aligns/simUCE447.fasta: ;
+  charset simUCE448.fasta = UCE_aligns/simUCE448.fasta: ;
+  charset simUCE449.fasta = UCE_aligns/simUCE449.fasta: ;
+  charset simUCE45.fasta = UCE_aligns/simUCE45.fasta: ;
+  charset simUCE450.fasta = UCE_aligns/simUCE450.fasta: ;
+  charset simUCE451.fasta = UCE_aligns/simUCE451.fasta: ;
+  charset simUCE452.fasta = UCE_aligns/simUCE452.fasta: ;
+  charset simUCE453.fasta = UCE_aligns/simUCE453.fasta: ;
+  charset simUCE454.fasta = UCE_aligns/simUCE454.fasta: ;
+  charset simUCE455.fasta = UCE_aligns/simUCE455.fasta: ;
+  charset simUCE456.fasta = UCE_aligns/simUCE456.fasta: ;
+  charset simUCE457.fasta = UCE_aligns/simUCE457.fasta: ;
+  charset simUCE458.fasta = UCE_aligns/simUCE458.fasta: ;
+  charset simUCE459.fasta = UCE_aligns/simUCE459.fasta: ;
+  charset simUCE46.fasta = UCE_aligns/simUCE46.fasta: ;
+  charset simUCE460.fasta = UCE_aligns/simUCE460.fasta: ;
+  charset simUCE461.fasta = UCE_aligns/simUCE461.fasta: ;
+  charset simUCE462.fasta = UCE_aligns/simUCE462.fasta: ;
+  charset simUCE463.fasta = UCE_aligns/simUCE463.fasta: ;
+  charset simUCE464.fasta = UCE_aligns/simUCE464.fasta: ;
+  charset simUCE465.fasta = UCE_aligns/simUCE465.fasta: ;
+  charset simUCE466.fasta = UCE_aligns/simUCE466.fasta: ;
+  charset simUCE467.fasta = UCE_aligns/simUCE467.fasta: ;
+  charset simUCE468.fasta = UCE_aligns/simUCE468.fasta: ;
+  charset simUCE469.fasta = UCE_aligns/simUCE469.fasta: ;
+  charset simUCE47.fasta = UCE_aligns/simUCE47.fasta: ;
+  charset simUCE470.fasta = UCE_aligns/simUCE470.fasta: ;
+  charset simUCE471.fasta = UCE_aligns/simUCE471.fasta: ;
+  charset simUCE472.fasta = UCE_aligns/simUCE472.fasta: ;
+  charset simUCE473.fasta = UCE_aligns/simUCE473.fasta: ;
+  charset simUCE474.fasta = UCE_aligns/simUCE474.fasta: ;
+  charset simUCE475.fasta = UCE_aligns/simUCE475.fasta: ;
+  charset simUCE476.fasta = UCE_aligns/simUCE476.fasta: ;
+  charset simUCE477.fasta = UCE_aligns/simUCE477.fasta: ;
+  charset simUCE478.fasta = UCE_aligns/simUCE478.fasta: ;
+  charset simUCE479.fasta = UCE_aligns/simUCE479.fasta: ;
+  charset simUCE48.fasta = UCE_aligns/simUCE48.fasta: ;
+  charset simUCE480.fasta = UCE_aligns/simUCE480.fasta: ;
+  charset simUCE481.fasta = UCE_aligns/simUCE481.fasta: ;
+  charset simUCE482.fasta = UCE_aligns/simUCE482.fasta: ;
+  charset simUCE483.fasta = UCE_aligns/simUCE483.fasta: ;
+  charset simUCE484.fasta = UCE_aligns/simUCE484.fasta: ;
+  charset simUCE485.fasta = UCE_aligns/simUCE485.fasta: ;
+  charset simUCE486.fasta = UCE_aligns/simUCE486.fasta: ;
+  charset simUCE487.fasta = UCE_aligns/simUCE487.fasta: ;
+  charset simUCE488.fasta = UCE_aligns/simUCE488.fasta: ;
+  charset simUCE489.fasta = UCE_aligns/simUCE489.fasta: ;
+  charset simUCE49.fasta = UCE_aligns/simUCE49.fasta: ;
+  charset simUCE490.fasta = UCE_aligns/simUCE490.fasta: ;
+  charset simUCE491.fasta = UCE_aligns/simUCE491.fasta: ;
+  charset simUCE492.fasta = UCE_aligns/simUCE492.fasta: ;
+  charset simUCE493.fasta = UCE_aligns/simUCE493.fasta: ;
+  charset simUCE494.fasta = UCE_aligns/simUCE494.fasta: ;
+  charset simUCE495.fasta = UCE_aligns/simUCE495.fasta: ;
+  charset simUCE496.fasta = UCE_aligns/simUCE496.fasta: ;
+  charset simUCE497.fasta = UCE_aligns/simUCE497.fasta: ;
+  charset simUCE498.fasta = UCE_aligns/simUCE498.fasta: ;
+  charset simUCE499.fasta = UCE_aligns/simUCE499.fasta: ;
+  charset simUCE5.fasta = UCE_aligns/simUCE5.fasta: ;
+  charset simUCE50.fasta = UCE_aligns/simUCE50.fasta: ;
+  charset simUCE500.fasta = UCE_aligns/simUCE500.fasta: ;
+  charset simUCE501.fasta = UCE_aligns/simUCE501.fasta: ;
+  charset simUCE502.fasta = UCE_aligns/simUCE502.fasta: ;
+  charset simUCE503.fasta = UCE_aligns/simUCE503.fasta: ;
+  charset simUCE504.fasta = UCE_aligns/simUCE504.fasta: ;
+  charset simUCE505.fasta = UCE_aligns/simUCE505.fasta: ;
+  charset simUCE506.fasta = UCE_aligns/simUCE506.fasta: ;
+  charset simUCE507.fasta = UCE_aligns/simUCE507.fasta: ;
+  charset simUCE508.fasta = UCE_aligns/simUCE508.fasta: ;
+  charset simUCE509.fasta = UCE_aligns/simUCE509.fasta: ;
+  charset simUCE51.fasta = UCE_aligns/simUCE51.fasta: ;
+  charset simUCE510.fasta = UCE_aligns/simUCE510.fasta: ;
+  charset simUCE511.fasta = UCE_aligns/simUCE511.fasta: ;
+  charset simUCE512.fasta = UCE_aligns/simUCE512.fasta: ;
+  charset simUCE513.fasta = UCE_aligns/simUCE513.fasta: ;
+  charset simUCE514.fasta = UCE_aligns/simUCE514.fasta: ;
+  charset simUCE515.fasta = UCE_aligns/simUCE515.fasta: ;
+  charset simUCE516.fasta = UCE_aligns/simUCE516.fasta: ;
+  charset simUCE517.fasta = UCE_aligns/simUCE517.fasta: ;
+  charset simUCE518.fasta = UCE_aligns/simUCE518.fasta: ;
+  charset simUCE519.fasta = UCE_aligns/simUCE519.fasta: ;
+  charset simUCE52.fasta = UCE_aligns/simUCE52.fasta: ;
+  charset simUCE520.fasta = UCE_aligns/simUCE520.fasta: ;
+  charset simUCE521.fasta = UCE_aligns/simUCE521.fasta: ;
+  charset simUCE522.fasta = UCE_aligns/simUCE522.fasta: ;
+  charset simUCE523.fasta = UCE_aligns/simUCE523.fasta: ;
+  charset simUCE524.fasta = UCE_aligns/simUCE524.fasta: ;
+  charset simUCE525.fasta = UCE_aligns/simUCE525.fasta: ;
+  charset simUCE526.fasta = UCE_aligns/simUCE526.fasta: ;
+  charset simUCE527.fasta = UCE_aligns/simUCE527.fasta: ;
+  charset simUCE528.fasta = UCE_aligns/simUCE528.fasta: ;
+  charset simUCE529.fasta = UCE_aligns/simUCE529.fasta: ;
+  charset simUCE53.fasta = UCE_aligns/simUCE53.fasta: ;
+  charset simUCE530.fasta = UCE_aligns/simUCE530.fasta: ;
+  charset simUCE531.fasta = UCE_aligns/simUCE531.fasta: ;
+  charset simUCE532.fasta = UCE_aligns/simUCE532.fasta: ;
+  charset simUCE533.fasta = UCE_aligns/simUCE533.fasta: ;
+  charset simUCE534.fasta = UCE_aligns/simUCE534.fasta: ;
+  charset simUCE535.fasta = UCE_aligns/simUCE535.fasta: ;
+  charset simUCE536.fasta = UCE_aligns/simUCE536.fasta: ;
+  charset simUCE537.fasta = UCE_aligns/simUCE537.fasta: ;
+  charset simUCE538.fasta = UCE_aligns/simUCE538.fasta: ;
+  charset simUCE539.fasta = UCE_aligns/simUCE539.fasta: ;
+  charset simUCE54.fasta = UCE_aligns/simUCE54.fasta: ;
+  charset simUCE540.fasta = UCE_aligns/simUCE540.fasta: ;
+  charset simUCE541.fasta = UCE_aligns/simUCE541.fasta: ;
+  charset simUCE542.fasta = UCE_aligns/simUCE542.fasta: ;
+  charset simUCE543.fasta = UCE_aligns/simUCE543.fasta: ;
+  charset simUCE544.fasta = UCE_aligns/simUCE544.fasta: ;
+  charset simUCE545.fasta = UCE_aligns/simUCE545.fasta: ;
+  charset simUCE546.fasta = UCE_aligns/simUCE546.fasta: ;
+  charset simUCE547.fasta = UCE_aligns/simUCE547.fasta: ;
+  charset simUCE548.fasta = UCE_aligns/simUCE548.fasta: ;
+  charset simUCE549.fasta = UCE_aligns/simUCE549.fasta: ;
+  charset simUCE55.fasta = UCE_aligns/simUCE55.fasta: ;
+  charset simUCE550.fasta = UCE_aligns/simUCE550.fasta: ;
+  charset simUCE551.fasta = UCE_aligns/simUCE551.fasta: ;
+  charset simUCE552.fasta = UCE_aligns/simUCE552.fasta: ;
+  charset simUCE553.fasta = UCE_aligns/simUCE553.fasta: ;
+  charset simUCE554.fasta = UCE_aligns/simUCE554.fasta: ;
+  charset simUCE555.fasta = UCE_aligns/simUCE555.fasta: ;
+  charset simUCE556.fasta = UCE_aligns/simUCE556.fasta: ;
+  charset simUCE557.fasta = UCE_aligns/simUCE557.fasta: ;
+  charset simUCE558.fasta = UCE_aligns/simUCE558.fasta: ;
+  charset simUCE559.fasta = UCE_aligns/simUCE559.fasta: ;
+  charset simUCE56.fasta = UCE_aligns/simUCE56.fasta: ;
+  charset simUCE560.fasta = UCE_aligns/simUCE560.fasta: ;
+  charset simUCE561.fasta = UCE_aligns/simUCE561.fasta: ;
+  charset simUCE562.fasta = UCE_aligns/simUCE562.fasta: ;
+  charset simUCE563.fasta = UCE_aligns/simUCE563.fasta: ;
+  charset simUCE564.fasta = UCE_aligns/simUCE564.fasta: ;
+  charset simUCE565.fasta = UCE_aligns/simUCE565.fasta: ;
+  charset simUCE566.fasta = UCE_aligns/simUCE566.fasta: ;
+  charset simUCE567.fasta = UCE_aligns/simUCE567.fasta: ;
+  charset simUCE568.fasta = UCE_aligns/simUCE568.fasta: ;
+  charset simUCE569.fasta = UCE_aligns/simUCE569.fasta: ;
+  charset simUCE57.fasta = UCE_aligns/simUCE57.fasta: ;
+  charset simUCE570.fasta = UCE_aligns/simUCE570.fasta: ;
+  charset simUCE571.fasta = UCE_aligns/simUCE571.fasta: ;
+  charset simUCE572.fasta = UCE_aligns/simUCE572.fasta: ;
+  charset simUCE573.fasta = UCE_aligns/simUCE573.fasta: ;
+  charset simUCE574.fasta = UCE_aligns/simUCE574.fasta: ;
+  charset simUCE575.fasta = UCE_aligns/simUCE575.fasta: ;
+  charset simUCE576.fasta = UCE_aligns/simUCE576.fasta: ;
+  charset simUCE577.fasta = UCE_aligns/simUCE577.fasta: ;
+  charset simUCE578.fasta = UCE_aligns/simUCE578.fasta: ;
+  charset simUCE579.fasta = UCE_aligns/simUCE579.fasta: ;
+  charset simUCE58.fasta = UCE_aligns/simUCE58.fasta: ;
+  charset simUCE580.fasta = UCE_aligns/simUCE580.fasta: ;
+  charset simUCE581.fasta = UCE_aligns/simUCE581.fasta: ;
+  charset simUCE582.fasta = UCE_aligns/simUCE582.fasta: ;
+  charset simUCE583.fasta = UCE_aligns/simUCE583.fasta: ;
+  charset simUCE584.fasta = UCE_aligns/simUCE584.fasta: ;
+  charset simUCE585.fasta = UCE_aligns/simUCE585.fasta: ;
+  charset simUCE586.fasta = UCE_aligns/simUCE586.fasta: ;
+  charset simUCE587.fasta = UCE_aligns/simUCE587.fasta: ;
+  charset simUCE588.fasta = UCE_aligns/simUCE588.fasta: ;
+  charset simUCE589.fasta = UCE_aligns/simUCE589.fasta: ;
+  charset simUCE59.fasta = UCE_aligns/simUCE59.fasta: ;
+  charset simUCE590.fasta = UCE_aligns/simUCE590.fasta: ;
+  charset simUCE591.fasta = UCE_aligns/simUCE591.fasta: ;
+  charset simUCE592.fasta = UCE_aligns/simUCE592.fasta: ;
+  charset simUCE593.fasta = UCE_aligns/simUCE593.fasta: ;
+  charset simUCE594.fasta = UCE_aligns/simUCE594.fasta: ;
+  charset simUCE595.fasta = UCE_aligns/simUCE595.fasta: ;
+  charset simUCE596.fasta = UCE_aligns/simUCE596.fasta: ;
+  charset simUCE597.fasta = UCE_aligns/simUCE597.fasta: ;
+  charset simUCE598.fasta = UCE_aligns/simUCE598.fasta: ;
+  charset simUCE599.fasta = UCE_aligns/simUCE599.fasta: ;
+  charset simUCE6.fasta = UCE_aligns/simUCE6.fasta: ;
+  charset simUCE60.fasta = UCE_aligns/simUCE60.fasta: ;
+  charset simUCE600.fasta = UCE_aligns/simUCE600.fasta: ;
+  charset simUCE601.fasta = UCE_aligns/simUCE601.fasta: ;
+  charset simUCE602.fasta = UCE_aligns/simUCE602.fasta: ;
+  charset simUCE603.fasta = UCE_aligns/simUCE603.fasta: ;
+  charset simUCE604.fasta = UCE_aligns/simUCE604.fasta: ;
+  charset simUCE605.fasta = UCE_aligns/simUCE605.fasta: ;
+  charset simUCE606.fasta = UCE_aligns/simUCE606.fasta: ;
+  charset simUCE607.fasta = UCE_aligns/simUCE607.fasta: ;
+  charset simUCE608.fasta = UCE_aligns/simUCE608.fasta: ;
+  charset simUCE609.fasta = UCE_aligns/simUCE609.fasta: ;
+  charset simUCE61.fasta = UCE_aligns/simUCE61.fasta: ;
+  charset simUCE610.fasta = UCE_aligns/simUCE610.fasta: ;
+  charset simUCE611.fasta = UCE_aligns/simUCE611.fasta: ;
+  charset simUCE612.fasta = UCE_aligns/simUCE612.fasta: ;
+  charset simUCE613.fasta = UCE_aligns/simUCE613.fasta: ;
+  charset simUCE614.fasta = UCE_aligns/simUCE614.fasta: ;
+  charset simUCE615.fasta = UCE_aligns/simUCE615.fasta: ;
+  charset simUCE616.fasta = UCE_aligns/simUCE616.fasta: ;
+  charset simUCE617.fasta = UCE_aligns/simUCE617.fasta: ;
+  charset simUCE618.fasta = UCE_aligns/simUCE618.fasta: ;
+  charset simUCE619.fasta = UCE_aligns/simUCE619.fasta: ;
+  charset simUCE62.fasta = UCE_aligns/simUCE62.fasta: ;
+  charset simUCE620.fasta = UCE_aligns/simUCE620.fasta: ;
+  charset simUCE621.fasta = UCE_aligns/simUCE621.fasta: ;
+  charset simUCE622.fasta = UCE_aligns/simUCE622.fasta: ;
+  charset simUCE623.fasta = UCE_aligns/simUCE623.fasta: ;
+  charset simUCE624.fasta = UCE_aligns/simUCE624.fasta: ;
+  charset simUCE625.fasta = UCE_aligns/simUCE625.fasta: ;
+  charset simUCE626.fasta = UCE_aligns/simUCE626.fasta: ;
+  charset simUCE627.fasta = UCE_aligns/simUCE627.fasta: ;
+  charset simUCE628.fasta = UCE_aligns/simUCE628.fasta: ;
+  charset simUCE629.fasta = UCE_aligns/simUCE629.fasta: ;
+  charset simUCE63.fasta = UCE_aligns/simUCE63.fasta: ;
+  charset simUCE630.fasta = UCE_aligns/simUCE630.fasta: ;
+  charset simUCE631.fasta = UCE_aligns/simUCE631.fasta: ;
+  charset simUCE632.fasta = UCE_aligns/simUCE632.fasta: ;
+  charset simUCE633.fasta = UCE_aligns/simUCE633.fasta: ;
+  charset simUCE634.fasta = UCE_aligns/simUCE634.fasta: ;
+  charset simUCE635.fasta = UCE_aligns/simUCE635.fasta: ;
+  charset simUCE636.fasta = UCE_aligns/simUCE636.fasta: ;
+  charset simUCE637.fasta = UCE_aligns/simUCE637.fasta: ;
+  charset simUCE638.fasta = UCE_aligns/simUCE638.fasta: ;
+  charset simUCE639.fasta = UCE_aligns/simUCE639.fasta: ;
+  charset simUCE64.fasta = UCE_aligns/simUCE64.fasta: ;
+  charset simUCE640.fasta = UCE_aligns/simUCE640.fasta: ;
+  charset simUCE641.fasta = UCE_aligns/simUCE641.fasta: ;
+  charset simUCE642.fasta = UCE_aligns/simUCE642.fasta: ;
+  charset simUCE643.fasta = UCE_aligns/simUCE643.fasta: ;
+  charset simUCE644.fasta = UCE_aligns/simUCE644.fasta: ;
+  charset simUCE645.fasta = UCE_aligns/simUCE645.fasta: ;
+  charset simUCE646.fasta = UCE_aligns/simUCE646.fasta: ;
+  charset simUCE647.fasta = UCE_aligns/simUCE647.fasta: ;
+  charset simUCE648.fasta = UCE_aligns/simUCE648.fasta: ;
+  charset simUCE649.fasta = UCE_aligns/simUCE649.fasta: ;
+  charset simUCE65.fasta = UCE_aligns/simUCE65.fasta: ;
+  charset simUCE650.fasta = UCE_aligns/simUCE650.fasta: ;
+  charset simUCE651.fasta = UCE_aligns/simUCE651.fasta: ;
+  charset simUCE652.fasta = UCE_aligns/simUCE652.fasta: ;
+  charset simUCE653.fasta = UCE_aligns/simUCE653.fasta: ;
+  charset simUCE654.fasta = UCE_aligns/simUCE654.fasta: ;
+  charset simUCE655.fasta = UCE_aligns/simUCE655.fasta: ;
+  charset simUCE656.fasta = UCE_aligns/simUCE656.fasta: ;
+  charset simUCE657.fasta = UCE_aligns/simUCE657.fasta: ;
+  charset simUCE658.fasta = UCE_aligns/simUCE658.fasta: ;
+  charset simUCE659.fasta = UCE_aligns/simUCE659.fasta: ;
+  charset simUCE66.fasta = UCE_aligns/simUCE66.fasta: ;
+  charset simUCE660.fasta = UCE_aligns/simUCE660.fasta: ;
+  charset simUCE661.fasta = UCE_aligns/simUCE661.fasta: ;
+  charset simUCE662.fasta = UCE_aligns/simUCE662.fasta: ;
+  charset simUCE663.fasta = UCE_aligns/simUCE663.fasta: ;
+  charset simUCE664.fasta = UCE_aligns/simUCE664.fasta: ;
+  charset simUCE665.fasta = UCE_aligns/simUCE665.fasta: ;
+  charset simUCE666.fasta = UCE_aligns/simUCE666.fasta: ;
+  charset simUCE667.fasta = UCE_aligns/simUCE667.fasta: ;
+  charset simUCE668.fasta = UCE_aligns/simUCE668.fasta: ;
+  charset simUCE669.fasta = UCE_aligns/simUCE669.fasta: ;
+  charset simUCE67.fasta = UCE_aligns/simUCE67.fasta: ;
+  charset simUCE670.fasta = UCE_aligns/simUCE670.fasta: ;
+  charset simUCE671.fasta = UCE_aligns/simUCE671.fasta: ;
+  charset simUCE672.fasta = UCE_aligns/simUCE672.fasta: ;
+  charset simUCE673.fasta = UCE_aligns/simUCE673.fasta: ;
+  charset simUCE674.fasta = UCE_aligns/simUCE674.fasta: ;
+  charset simUCE675.fasta = UCE_aligns/simUCE675.fasta: ;
+  charset simUCE676.fasta = UCE_aligns/simUCE676.fasta: ;
+  charset simUCE677.fasta = UCE_aligns/simUCE677.fasta: ;
+  charset simUCE678.fasta = UCE_aligns/simUCE678.fasta: ;
+  charset simUCE679.fasta = UCE_aligns/simUCE679.fasta: ;
+  charset simUCE68.fasta = UCE_aligns/simUCE68.fasta: ;
+  charset simUCE680.fasta = UCE_aligns/simUCE680.fasta: ;
+  charset simUCE681.fasta = UCE_aligns/simUCE681.fasta: ;
+  charset simUCE682.fasta = UCE_aligns/simUCE682.fasta: ;
+  charset simUCE683.fasta = UCE_aligns/simUCE683.fasta: ;
+  charset simUCE684.fasta = UCE_aligns/simUCE684.fasta: ;
+  charset simUCE685.fasta = UCE_aligns/simUCE685.fasta: ;
+  charset simUCE686.fasta = UCE_aligns/simUCE686.fasta: ;
+  charset simUCE687.fasta = UCE_aligns/simUCE687.fasta: ;
+  charset simUCE688.fasta = UCE_aligns/simUCE688.fasta: ;
+  charset simUCE689.fasta = UCE_aligns/simUCE689.fasta: ;
+  charset simUCE69.fasta = UCE_aligns/simUCE69.fasta: ;
+  charset simUCE690.fasta = UCE_aligns/simUCE690.fasta: ;
+  charset simUCE691.fasta = UCE_aligns/simUCE691.fasta: ;
+  charset simUCE692.fasta = UCE_aligns/simUCE692.fasta: ;
+  charset simUCE693.fasta = UCE_aligns/simUCE693.fasta: ;
+  charset simUCE694.fasta = UCE_aligns/simUCE694.fasta: ;
+  charset simUCE695.fasta = UCE_aligns/simUCE695.fasta: ;
+  charset simUCE696.fasta = UCE_aligns/simUCE696.fasta: ;
+  charset simUCE697.fasta = UCE_aligns/simUCE697.fasta: ;
+  charset simUCE698.fasta = UCE_aligns/simUCE698.fasta: ;
+  charset simUCE699.fasta = UCE_aligns/simUCE699.fasta: ;
+  charset simUCE7.fasta = UCE_aligns/simUCE7.fasta: ;
+  charset simUCE70.fasta = UCE_aligns/simUCE70.fasta: ;
+  charset simUCE700.fasta = UCE_aligns/simUCE700.fasta: ;
+  charset simUCE701.fasta = UCE_aligns/simUCE701.fasta: ;
+  charset simUCE702.fasta = UCE_aligns/simUCE702.fasta: ;
+  charset simUCE703.fasta = UCE_aligns/simUCE703.fasta: ;
+  charset simUCE704.fasta = UCE_aligns/simUCE704.fasta: ;
+  charset simUCE705.fasta = UCE_aligns/simUCE705.fasta: ;
+  charset simUCE706.fasta = UCE_aligns/simUCE706.fasta: ;
+  charset simUCE707.fasta = UCE_aligns/simUCE707.fasta: ;
+  charset simUCE708.fasta = UCE_aligns/simUCE708.fasta: ;
+  charset simUCE709.fasta = UCE_aligns/simUCE709.fasta: ;
+  charset simUCE71.fasta = UCE_aligns/simUCE71.fasta: ;
+  charset simUCE710.fasta = UCE_aligns/simUCE710.fasta: ;
+  charset simUCE711.fasta = UCE_aligns/simUCE711.fasta: ;
+  charset simUCE712.fasta = UCE_aligns/simUCE712.fasta: ;
+  charset simUCE713.fasta = UCE_aligns/simUCE713.fasta: ;
+  charset simUCE714.fasta = UCE_aligns/simUCE714.fasta: ;
+  charset simUCE715.fasta = UCE_aligns/simUCE715.fasta: ;
+  charset simUCE716.fasta = UCE_aligns/simUCE716.fasta: ;
+  charset simUCE717.fasta = UCE_aligns/simUCE717.fasta: ;
+  charset simUCE718.fasta = UCE_aligns/simUCE718.fasta: ;
+  charset simUCE719.fasta = UCE_aligns/simUCE719.fasta: ;
+  charset simUCE72.fasta = UCE_aligns/simUCE72.fasta: ;
+  charset simUCE720.fasta = UCE_aligns/simUCE720.fasta: ;
+  charset simUCE721.fasta = UCE_aligns/simUCE721.fasta: ;
+  charset simUCE722.fasta = UCE_aligns/simUCE722.fasta: ;
+  charset simUCE723.fasta = UCE_aligns/simUCE723.fasta: ;
+  charset simUCE724.fasta = UCE_aligns/simUCE724.fasta: ;
+  charset simUCE725.fasta = UCE_aligns/simUCE725.fasta: ;
+  charset simUCE726.fasta = UCE_aligns/simUCE726.fasta: ;
+  charset simUCE727.fasta = UCE_aligns/simUCE727.fasta: ;
+  charset simUCE728.fasta = UCE_aligns/simUCE728.fasta: ;
+  charset simUCE729.fasta = UCE_aligns/simUCE729.fasta: ;
+  charset simUCE73.fasta = UCE_aligns/simUCE73.fasta: ;
+  charset simUCE730.fasta = UCE_aligns/simUCE730.fasta: ;
+  charset simUCE731.fasta = UCE_aligns/simUCE731.fasta: ;
+  charset simUCE732.fasta = UCE_aligns/simUCE732.fasta: ;
+  charset simUCE733.fasta = UCE_aligns/simUCE733.fasta: ;
+  charset simUCE734.fasta = UCE_aligns/simUCE734.fasta: ;
+  charset simUCE735.fasta = UCE_aligns/simUCE735.fasta: ;
+  charset simUCE736.fasta = UCE_aligns/simUCE736.fasta: ;
+  charset simUCE737.fasta = UCE_aligns/simUCE737.fasta: ;
+  charset simUCE738.fasta = UCE_aligns/simUCE738.fasta: ;
+  charset simUCE739.fasta = UCE_aligns/simUCE739.fasta: ;
+  charset simUCE74.fasta = UCE_aligns/simUCE74.fasta: ;
+  charset simUCE740.fasta = UCE_aligns/simUCE740.fasta: ;
+  charset simUCE741.fasta = UCE_aligns/simUCE741.fasta: ;
+  charset simUCE742.fasta = UCE_aligns/simUCE742.fasta: ;
+  charset simUCE743.fasta = UCE_aligns/simUCE743.fasta: ;
+  charset simUCE744.fasta = UCE_aligns/simUCE744.fasta: ;
+  charset simUCE745.fasta = UCE_aligns/simUCE745.fasta: ;
+  charset simUCE746.fasta = UCE_aligns/simUCE746.fasta: ;
+  charset simUCE747.fasta = UCE_aligns/simUCE747.fasta: ;
+  charset simUCE748.fasta = UCE_aligns/simUCE748.fasta: ;
+  charset simUCE749.fasta = UCE_aligns/simUCE749.fasta: ;
+  charset simUCE75.fasta = UCE_aligns/simUCE75.fasta: ;
+  charset simUCE750.fasta = UCE_aligns/simUCE750.fasta: ;
+  charset simUCE751.fasta = UCE_aligns/simUCE751.fasta: ;
+  charset simUCE752.fasta = UCE_aligns/simUCE752.fasta: ;
+  charset simUCE753.fasta = UCE_aligns/simUCE753.fasta: ;
+  charset simUCE754.fasta = UCE_aligns/simUCE754.fasta: ;
+  charset simUCE755.fasta = UCE_aligns/simUCE755.fasta: ;
+  charset simUCE756.fasta = UCE_aligns/simUCE756.fasta: ;
+  charset simUCE757.fasta = UCE_aligns/simUCE757.fasta: ;
+  charset simUCE758.fasta = UCE_aligns/simUCE758.fasta: ;
+  charset simUCE759.fasta = UCE_aligns/simUCE759.fasta: ;
+  charset simUCE76.fasta = UCE_aligns/simUCE76.fasta: ;
+  charset simUCE760.fasta = UCE_aligns/simUCE760.fasta: ;
+  charset simUCE761.fasta = UCE_aligns/simUCE761.fasta: ;
+  charset simUCE762.fasta = UCE_aligns/simUCE762.fasta: ;
+  charset simUCE763.fasta = UCE_aligns/simUCE763.fasta: ;
+  charset simUCE764.fasta = UCE_aligns/simUCE764.fasta: ;
+  charset simUCE765.fasta = UCE_aligns/simUCE765.fasta: ;
+  charset simUCE766.fasta = UCE_aligns/simUCE766.fasta: ;
+  charset simUCE767.fasta = UCE_aligns/simUCE767.fasta: ;
+  charset simUCE768.fasta = UCE_aligns/simUCE768.fasta: ;
+  charset simUCE769.fasta = UCE_aligns/simUCE769.fasta: ;
+  charset simUCE77.fasta = UCE_aligns/simUCE77.fasta: ;
+  charset simUCE770.fasta = UCE_aligns/simUCE770.fasta: ;
+  charset simUCE771.fasta = UCE_aligns/simUCE771.fasta: ;
+  charset simUCE772.fasta = UCE_aligns/simUCE772.fasta: ;
+  charset simUCE773.fasta = UCE_aligns/simUCE773.fasta: ;
+  charset simUCE774.fasta = UCE_aligns/simUCE774.fasta: ;
+  charset simUCE775.fasta = UCE_aligns/simUCE775.fasta: ;
+  charset simUCE776.fasta = UCE_aligns/simUCE776.fasta: ;
+  charset simUCE777.fasta = UCE_aligns/simUCE777.fasta: ;
+  charset simUCE778.fasta = UCE_aligns/simUCE778.fasta: ;
+  charset simUCE779.fasta = UCE_aligns/simUCE779.fasta: ;
+  charset simUCE78.fasta = UCE_aligns/simUCE78.fasta: ;
+  charset simUCE780.fasta = UCE_aligns/simUCE780.fasta: ;
+  charset simUCE781.fasta = UCE_aligns/simUCE781.fasta: ;
+  charset simUCE782.fasta = UCE_aligns/simUCE782.fasta: ;
+  charset simUCE783.fasta = UCE_aligns/simUCE783.fasta: ;
+  charset simUCE784.fasta = UCE_aligns/simUCE784.fasta: ;
+  charset simUCE785.fasta = UCE_aligns/simUCE785.fasta: ;
+  charset simUCE786.fasta = UCE_aligns/simUCE786.fasta: ;
+  charset simUCE787.fasta = UCE_aligns/simUCE787.fasta: ;
+  charset simUCE788.fasta = UCE_aligns/simUCE788.fasta: ;
+  charset simUCE789.fasta = UCE_aligns/simUCE789.fasta: ;
+  charset simUCE79.fasta = UCE_aligns/simUCE79.fasta: ;
+  charset simUCE790.fasta = UCE_aligns/simUCE790.fasta: ;
+  charset simUCE791.fasta = UCE_aligns/simUCE791.fasta: ;
+  charset simUCE792.fasta = UCE_aligns/simUCE792.fasta: ;
+  charset simUCE793.fasta = UCE_aligns/simUCE793.fasta: ;
+  charset simUCE794.fasta = UCE_aligns/simUCE794.fasta: ;
+  charset simUCE795.fasta = UCE_aligns/simUCE795.fasta: ;
+  charset simUCE796.fasta = UCE_aligns/simUCE796.fasta: ;
+  charset simUCE797.fasta = UCE_aligns/simUCE797.fasta: ;
+  charset simUCE798.fasta = UCE_aligns/simUCE798.fasta: ;
+  charset simUCE799.fasta = UCE_aligns/simUCE799.fasta: ;
+  charset simUCE8.fasta = UCE_aligns/simUCE8.fasta: ;
+  charset simUCE80.fasta = UCE_aligns/simUCE80.fasta: ;
+  charset simUCE800.fasta = UCE_aligns/simUCE800.fasta: ;
+  charset simUCE81.fasta = UCE_aligns/simUCE81.fasta: ;
+  charset simUCE82.fasta = UCE_aligns/simUCE82.fasta: ;
+  charset simUCE83.fasta = UCE_aligns/simUCE83.fasta: ;
+  charset simUCE84.fasta = UCE_aligns/simUCE84.fasta: ;
+  charset simUCE85.fasta = UCE_aligns/simUCE85.fasta: ;
+  charset simUCE86.fasta = UCE_aligns/simUCE86.fasta: ;
+  charset simUCE87.fasta = UCE_aligns/simUCE87.fasta: ;
+  charset simUCE88.fasta = UCE_aligns/simUCE88.fasta: ;
+  charset simUCE89.fasta = UCE_aligns/simUCE89.fasta: ;
+  charset simUCE9.fasta = UCE_aligns/simUCE9.fasta: ;
+  charset simUCE90.fasta = UCE_aligns/simUCE90.fasta: ;
+  charset simUCE91.fasta = UCE_aligns/simUCE91.fasta: ;
+  charset simUCE92.fasta = UCE_aligns/simUCE92.fasta: ;
+  charset simUCE93.fasta = UCE_aligns/simUCE93.fasta: ;
+  charset simUCE94.fasta = UCE_aligns/simUCE94.fasta: ;
+  charset simUCE95.fasta = UCE_aligns/simUCE95.fasta: ;
+  charset simUCE96.fasta = UCE_aligns/simUCE96.fasta: ;
+  charset simUCE97.fasta = UCE_aligns/simUCE97.fasta: ;
+  charset simUCE98.fasta = UCE_aligns/simUCE98.fasta: ;
+  charset simUCE99.fasta = UCE_aligns/simUCE99.fasta: ;
+  charpartition mymodels =
+    JC: simUCE1.fasta{0.151738},
+    JC: simUCE10.fasta{0.0838538},
+    JC: simUCE100.fasta{0.167309},
+    JC: simUCE101.fasta{0.0726063},
+    JC: simUCE102.fasta{0.176036},
+    JC: simUCE103.fasta{0.0432152},
+    JC: simUCE104.fasta{0.0839379},
+    JC: simUCE105.fasta{0.0529851},
+    JC: simUCE106.fasta{0.161723},
+    JC: simUCE107.fasta{0.206055},
+    JC: simUCE108.fasta{0.148785},
+    JC: simUCE109.fasta{0.0951744},
+    JC: simUCE11.fasta{0.0222766},
+    JC: simUCE110.fasta{0.190351},
+    JC: simUCE111.fasta{0.127783},
+    JC: simUCE112.fasta{0.0881489},
+    JC: simUCE113.fasta{0.0655786},
+    JC: simUCE114.fasta{0.389701},
+    JC: simUCE115.fasta{0.37492},
+    JC: simUCE116.fasta{0.0460405},
+    JC: simUCE117.fasta{0.0194807},
+    JC: simUCE118.fasta{0.121858},
+    JC: simUCE119.fasta{0.173226},
+    JC: simUCE12.fasta{0.293912},
+    K2P{0.533577}+FQ: simUCE120.fasta{0.14481},
+    JC: simUCE121.fasta{0.114956},
+    JC: simUCE122.fasta{0.0390278},
+    JC: simUCE123.fasta{0.04042},
+    JC: simUCE124.fasta{0.132025},
+    JC: simUCE125.fasta{0.154559},
+    JC: simUCE126.fasta{0.224775},
+    JC: simUCE127.fasta{0.0726121},
+    JC: simUCE128.fasta{0.0558456},
+    JC: simUCE129.fasta{0.141855},
+    JC: simUCE13.fasta{0.0376261},
+    JC: simUCE130.fasta{0.061445},
+    JC+I{0.341736}: simUCE131.fasta{0.335665},
+    JC: simUCE132.fasta{0.242173},
+    JC: simUCE133.fasta{0.0684247},
+    JC: simUCE134.fasta{0.0446306},
+    JC: simUCE135.fasta{0.15337},
+    JC: simUCE136.fasta{0.316744},
+    JC: simUCE137.fasta{0.198971},
+    JC: simUCE138.fasta{0.104926},
+    JC: simUCE139.fasta{0.161893},
+    JC: simUCE14.fasta{0.261661},
+    JC: simUCE140.fasta{0.103851},
+    JC: simUCE141.fasta{0.064198},
+    JC: simUCE142.fasta{0.0782688},
+    JC: simUCE143.fasta{0.140658},
+    JC: simUCE144.fasta{0.189963},
+    JC: simUCE145.fasta{0.123472},
+    JC: simUCE146.fasta{0.0516255},
+    JC: simUCE147.fasta{0.0867456},
+    JC: simUCE148.fasta{0.127627},
+    JC+G4{0.778026}: simUCE149.fasta{0.231629},
+    JC: simUCE15.fasta{0.0125365},
+    JC: simUCE150.fasta{0.0881251},
+    JC: simUCE151.fasta{0.138925},
+    JC+I{0.287929}: simUCE152.fasta{0.364395},
+    JC: simUCE153.fasta{0.0684423},
+    JC: simUCE154.fasta{0.0867241},
+    JC: simUCE155.fasta{0.240586},
+    JC: simUCE156.fasta{0.126265},
+    JC: simUCE157.fasta{0.160343},
+    JC: simUCE158.fasta{0.0139221},
+    JC: simUCE159.fasta{0.0866707},
+    JC: simUCE16.fasta{0.0656133},
+    JC: simUCE160.fasta{0.044589},
+    JC: simUCE161.fasta{0.0628801},
+    JC: simUCE162.fasta{0.112157},
+    JC: simUCE163.fasta{0.0236658},
+    JC+G4{3.75911}: simUCE164.fasta{0.871009},
+    JC: simUCE165.fasta{0.434917},
+    JC: simUCE166.fasta{0.0278796},
+    JC: simUCE167.fasta{0.129148},
+    JC: simUCE168.fasta{0.0502326},
+    JC: simUCE169.fasta{0.176015},
+    JC: simUCE17.fasta{0.232021},
+    JC: simUCE170.fasta{0.211824},
+    JC: simUCE171.fasta{0.171739},
+    JC: simUCE172.fasta{0.029281},
+    JC: simUCE173.fasta{0.0404539},
+    JC: simUCE174.fasta{0.229515},
+    JC: simUCE175.fasta{0.0754891},
+    JC: simUCE176.fasta{0.137432},
+    JC: simUCE177.fasta{0.285662},
+    JC: simUCE178.fasta{0.04322},
+    JC: simUCE179.fasta{0.123305},
+    JC: simUCE18.fasta{0.0209013},
+    JC: simUCE180.fasta{0.0852947},
+    JC+I{0.231469}: simUCE181.fasta{0.471825},
+    JC: simUCE182.fasta{0.0810046},
+    JC: simUCE183.fasta{0.0348584},
+    JC: simUCE184.fasta{0.0952244},
+    JC: simUCE185.fasta{0.156097},
+    JC: simUCE186.fasta{0.0460352},
+    JC: simUCE187.fasta{0.100781},
+    JC: simUCE188.fasta{0.185986},
+    JC: simUCE189.fasta{0.288072},
+    JC: simUCE19.fasta{0.178924},
+    JC: simUCE190.fasta{0.0544354},
+    JC: simUCE191.fasta{0.032029},
+    JC: simUCE192.fasta{0.286936},
+    JC: simUCE193.fasta{0.148735},
+    JC: simUCE194.fasta{0.088132},
+    JC: simUCE195.fasta{0.220352},
+    JC: simUCE196.fasta{0.205682},
+    JC: simUCE197.fasta{0.19306},
+    JC: simUCE198.fasta{0.140412},
+    JC: simUCE199.fasta{0.102098},
+    JC: simUCE2.fasta{0.0655862},
+    JC: simUCE20.fasta{0.231905},
+    JC: simUCE200.fasta{0.0432694},
+    JC: simUCE201.fasta{0.255031},
+    JC: simUCE202.fasta{0.0824576},
+    JC: simUCE203.fasta{0.149007},
+    JC: simUCE204.fasta{0.0460033},
+    JC+I{0.194578}: simUCE205.fasta{0.821064},
+    JC: simUCE206.fasta{0.161602},
+    JC: simUCE207.fasta{0.0586257},
+    JC: simUCE208.fasta{0.0139221},
+    JC: simUCE209.fasta{0.0348345},
+    JC: simUCE21.fasta{0.210064},
+    JC: simUCE210.fasta{0.1332},
+    JC: simUCE211.fasta{0.106484},
+    JC: simUCE212.fasta{0.144554},
+    JC: simUCE213.fasta{0.0292323},
+    JC: simUCE214.fasta{0.197351},
+    JC: simUCE215.fasta{0.447208},
+    JC: simUCE216.fasta{0.226136},
+    JC: simUCE217.fasta{0.38121},
+    JC: simUCE218.fasta{0.0712569},
+    JC: simUCE219.fasta{0.12327},
+    JC: simUCE22.fasta{0.0250646},
+    JC: simUCE220.fasta{0.191804},
+    JC: simUCE221.fasta{0.0839125},
+    JC: simUCE222.fasta{0.0432251},
+    JC: simUCE223.fasta{0.133394},
+    JC: simUCE224.fasta{0.1064},
+    JC: simUCE225.fasta{0.168827},
+    JC: simUCE226.fasta{0.07265},
+    JC: simUCE227.fasta{0.0880893},
+    JC: simUCE228.fasta{0.0320552},
+    JC: simUCE229.fasta{0.201919},
+    JC: simUCE23.fasta{0.11643},
+    JC: simUCE230.fasta{0.120579},
+    JC: simUCE231.fasta{0.166194},
+    JC: simUCE232.fasta{0.00418453},
+    JC: simUCE233.fasta{0.16861},
+    JC: simUCE234.fasta{0.426435},
+    K2P{0.616406}+FQ: simUCE235.fasta{0.335117},
+    JC: simUCE236.fasta{0.226477},
+    JC: simUCE237.fasta{0.223184},
+    JC: simUCE238.fasta{1.7e-05},
+    JC: simUCE239.fasta{0.134864},
+    JC: simUCE24.fasta{0.116417},
+    JC: simUCE240.fasta{0.121988},
+    JC: simUCE241.fasta{0.259328},
+    JC: simUCE242.fasta{0.0153163},
+    JC: simUCE243.fasta{0.0937065},
+    JC: simUCE244.fasta{0.25041},
+    JC: simUCE245.fasta{0.154677},
+    JC: simUCE246.fasta{0.148875},
+    JC: simUCE247.fasta{0.202184},
+    JC: simUCE248.fasta{0.0446284},
+    JC: simUCE249.fasta{0.485587},
+    JC: simUCE25.fasta{0.0839367},
+    JC: simUCE250.fasta{0.48136},
+    JC: simUCE251.fasta{0.0712392},
+    JC: simUCE252.fasta{0.0727128},
+    JC: simUCE253.fasta{0.266683},
+    JC: simUCE254.fasta{0.114937},
+    JC: simUCE255.fasta{0.092339},
+    JC: simUCE256.fasta{0.127873},
+    JC: simUCE257.fasta{0.0348228},
+    JC: simUCE258.fasta{0.313981},
+    JC: simUCE259.fasta{0.23465},
+    JC: simUCE26.fasta{0.249049},
+    JC: simUCE260.fasta{0.0459918},
+    JC: simUCE261.fasta{0.207513},
+    JC: simUCE262.fasta{0.137416},
+    JC: simUCE263.fasta{0.187554},
+    JC: simUCE264.fasta{0.0993405},
+    JC+I{0.279423}: simUCE265.fasta{0.446739},
+    JC: simUCE266.fasta{0.356092},
+    JC: simUCE267.fasta{0.234604},
+    JC: simUCE268.fasta{0.201849},
+    JC: simUCE269.fasta{0.0698502},
+    JC: simUCE27.fasta{0.0418208},
+    JC: simUCE270.fasta{0.0894421},
+    JC: simUCE271.fasta{0.387476},
+    JC: simUCE272.fasta{0.0376335},
+    JC: simUCE273.fasta{0.249303},
+    JC: simUCE274.fasta{0.341314},
+    JC: simUCE275.fasta{0.239713},
+    JC: simUCE276.fasta{0.0698671},
+    JC: simUCE277.fasta{0.136267},
+    JC: simUCE278.fasta{0.169099},
+    JC: simUCE279.fasta{0.0600745},
+    JC: simUCE28.fasta{0.0994144},
+    JC: simUCE280.fasta{0.185878},
+    JC: simUCE281.fasta{0.0684166},
+    JC: simUCE282.fasta{0.109221},
+    JC: simUCE283.fasta{0.209075},
+    JC: simUCE284.fasta{0.592803},
+    JC: simUCE285.fasta{0.0180896},
+    JC: simUCE286.fasta{0.0980396},
+    JC: simUCE287.fasta{0.157561},
+    JC: simUCE288.fasta{0.187619},
+    JC: simUCE289.fasta{0.0445956},
+    JC: simUCE29.fasta{0.183106},
+    JC: simUCE290.fasta{0.112244},
+    JC: simUCE291.fasta{0.126107},
+    JC: simUCE292.fasta{0.0613985},
+    JC: simUCE293.fasta{0.0868287},
+    JC: simUCE294.fasta{0.0167101},
+    JC: simUCE295.fasta{0.19875},
+    JC: simUCE296.fasta{0.0166975},
+    JC: simUCE297.fasta{0.288069},
+    JC: simUCE298.fasta{0.176349},
+    JC: simUCE299.fasta{0.264815},
+    JC+G4{2.20759}: simUCE3.fasta{0.604122},
+    JC: simUCE30.fasta{0.0544649},
+    JC: simUCE300.fasta{0.15314},
+    JC: simUCE301.fasta{0.163121},
+    JC: simUCE302.fasta{0.123278},
+    JC: simUCE303.fasta{0.193274},
+    JC: simUCE304.fasta{0.106594},
+    JC: simUCE305.fasta{0.0586045},
+    JC: simUCE306.fasta{0.0824416},
+    JC: simUCE307.fasta{0.093852},
+    JC: simUCE308.fasta{0.0979786},
+    JC: simUCE309.fasta{0.193316},
+    JC: simUCE31.fasta{0.102177},
+    JC: simUCE310.fasta{0.134597},
+    JC: simUCE311.fasta{0.0726129},
+    JC: simUCE312.fasta{0.0222869},
+    JC: simUCE313.fasta{0.13067},
+    JC: simUCE314.fasta{0.0488291},
+    JC: simUCE315.fasta{0.120373},
+    JC: simUCE316.fasta{0.0166978},
+    JC: simUCE317.fasta{0.0741006},
+    JC: simUCE318.fasta{0.211634},
+    JC: simUCE319.fasta{0.123496},
+    JC: simUCE32.fasta{0.0544517},
+    JC: simUCE320.fasta{0.211807},
+    JC: simUCE321.fasta{0.108004},
+    JC: simUCE322.fasta{0.0404458},
+    JC: simUCE323.fasta{0.103629},
+    JC: simUCE324.fasta{0.0810974},
+    JC: simUCE325.fasta{0.220203},
+    JC: simUCE326.fasta{0.22903},
+    JC: simUCE327.fasta{0.203531},
+    JC: simUCE328.fasta{0.0936937},
+    JC: simUCE329.fasta{0.134624},
+    JC: simUCE33.fasta{0.201776},
+    JC: simUCE330.fasta{0.0208838},
+    JC: simUCE331.fasta{0.307117},
+    JC: simUCE332.fasta{0.0685533},
+    JC: simUCE333.fasta{0.137592},
+    JC: simUCE334.fasta{0.314352},
+    JC: simUCE335.fasta{0.100748},
+    JC: simUCE336.fasta{0.100807},
+    JC: simUCE337.fasta{0.167645},
+    JC: simUCE338.fasta{0.104973},
+    JC: simUCE339.fasta{0.182945},
+    JC: simUCE34.fasta{0.341686},
+    JC: simUCE340.fasta{0.342046},
+    JC: simUCE341.fasta{0.140455},
+    JC: simUCE342.fasta{0.0377215},
+    JC: simUCE343.fasta{0.172251},
+    JC: simUCE344.fasta{0.204576},
+    JC: simUCE345.fasta{0.102241},
+    JC: simUCE346.fasta{0.253597},
+    JC: simUCE347.fasta{0.143388},
+    K2P{1.70042}+FQ: simUCE348.fasta{0.153359},
+    JC: simUCE349.fasta{0.194331},
+    JC: simUCE35.fasta{0.0965189},
+    JC: simUCE350.fasta{0.0167022},
+    JC: simUCE351.fasta{0.208251},
+    JC: simUCE352.fasta{0.243828},
+    JC: simUCE353.fasta{0.320403},
+    JC: simUCE354.fasta{0.0670277},
+    JC: simUCE355.fasta{0.277123},
+    JC: simUCE356.fasta{0.143258},
+    JC: simUCE357.fasta{0.213214},
+    JC: simUCE358.fasta{0.362963},
+    JC: simUCE359.fasta{0.0417809},
+    JC: simUCE36.fasta{0.397064},
+    JC: simUCE360.fasta{0.081051},
+    JC: simUCE361.fasta{0.141733},
+    JC: simUCE362.fasta{0.0446214},
+    JC: simUCE363.fasta{0.0840222},
+    JC: simUCE364.fasta{0.531091},
+    JC: simUCE365.fasta{0.118025},
+    JC: simUCE366.fasta{0.090858},
+    JC: simUCE367.fasta{0.330276},
+    JC: simUCE368.fasta{0.198974},
+    JC: simUCE369.fasta{0.140177},
+    JC: simUCE37.fasta{0.0698203},
+    JC: simUCE370.fasta{0.198647},
+    JC: simUCE371.fasta{0.0139292},
+    JC: simUCE372.fasta{0.0558006},
+    JC: simUCE373.fasta{0.396414},
+    JC: simUCE374.fasta{0.242323},
+    JC: simUCE375.fasta{0.149009},
+    JC: simUCE376.fasta{0.150372},
+    JC: simUCE377.fasta{0.194369},
+    JC: simUCE378.fasta{0.0516128},
+    JC: simUCE379.fasta{0.139015},
+    JC: simUCE38.fasta{0.170232},
+    JC: simUCE380.fasta{0.353818},
+    JC: simUCE381.fasta{0.0376232},
+    JC: simUCE382.fasta{0.200262},
+    JC: simUCE383.fasta{0.395201},
+    JC: simUCE384.fasta{0.171475},
+    JC: simUCE385.fasta{0.14911},
+    JC: simUCE386.fasta{0.164678},
+    JC: simUCE387.fasta{0.0894714},
+    JC: simUCE388.fasta{0.0600157},
+    JC: simUCE389.fasta{0.166186},
+    JC: simUCE39.fasta{0.433377},
+    JC: simUCE390.fasta{0.0376139},
+    JC: simUCE391.fasta{0.0670696},
+    JC: simUCE392.fasta{0.103592},
+    JC: simUCE393.fasta{0.0952282},
+    JC: simUCE394.fasta{0.0180942},
+    JC: simUCE395.fasta{0.165915},
+    JC: simUCE396.fasta{0.233956},
+    JC: simUCE397.fasta{0.067073},
+    JC: simUCE398.fasta{0.377227},
+    JC: simUCE399.fasta{0.16044},
+    JC: simUCE4.fasta{0.305293},
+    JC: simUCE40.fasta{0.186302},
+    JC: simUCE400.fasta{0.100707},
+    JC: simUCE401.fasta{0.0894173},
+    JC: simUCE402.fasta{0.123439},
+    JC: simUCE403.fasta{0.17315},
+    JC: simUCE404.fasta{0.0656248},
+    JC: simUCE405.fasta{0.0600363},
+    JC: simUCE406.fasta{0.0585921},
+    JC: simUCE407.fasta{0.191758},
+    JC: simUCE408.fasta{0.187662},
+    JC: simUCE409.fasta{0.284339},
+    JC: simUCE41.fasta{0.102148},
+    JC: simUCE410.fasta{0.154574},
+    JC: simUCE411.fasta{0.0895374},
+    JC: simUCE412.fasta{0.208961},
+    JC: simUCE413.fasta{0.0811145},
+    JC: simUCE414.fasta{0.110601},
+    JC: simUCE415.fasta{0.119146},
+    JC: simUCE416.fasta{0.1605},
+    JC: simUCE417.fasta{0.308377},
+    JC: simUCE418.fasta{0.0362582},
+    JC: simUCE419.fasta{0.11213},
+    JC: simUCE42.fasta{0.127796},
+    JC: simUCE420.fasta{0.227843},
+    JC: simUCE421.fasta{0.0852969},
+    JC: simUCE422.fasta{0.102598},
+    JC: simUCE423.fasta{0.323189},
+    JC: simUCE424.fasta{0.24626},
+    JC: simUCE425.fasta{0.0937798},
+    JC: simUCE426.fasta{0.0852957},
+    JC: simUCE427.fasta{0.449586},
+    JC: simUCE428.fasta{0.083916},
+    JC: simUCE429.fasta{0.171386},
+    JC: simUCE43.fasta{0.0348248},
+    JC: simUCE430.fasta{0.065653},
+    JC: simUCE431.fasta{0.137532},
+    JC: simUCE432.fasta{0.156019},
+    JC: simUCE433.fasta{0.168748},
+    JC: simUCE434.fasta{0.0530283},
+    JC: simUCE435.fasta{0.0404409},
+    JC: simUCE436.fasta{0.0222709},
+    JC: simUCE437.fasta{0.227344},
+    JC: simUCE438.fasta{0.0923398},
+    JC+I{0.490352}: simUCE439.fasta{0.182675},
+    JC: simUCE44.fasta{0.0432684},
+    JC: simUCE440.fasta{0.190331},
+    JC: simUCE441.fasta{0.136183},
+    JC: simUCE442.fasta{0.0684211},
+    JC: simUCE443.fasta{0.0501905},
+    JC: simUCE444.fasta{0.0501888},
+    JC: simUCE445.fasta{0.348566},
+    JC: simUCE446.fasta{0.0236981},
+    JC: simUCE447.fasta{0.163363},
+    JC: simUCE448.fasta{0.0446101},
+    JC: simUCE449.fasta{0.0627659},
+    K2P{1.62668}+FQ: simUCE45.fasta{0.210648},
+    JC: simUCE450.fasta{0.0404209},
+    JC: simUCE451.fasta{0.0628305},
+    JC: simUCE452.fasta{0.0306233},
+    JC: simUCE453.fasta{0.190302},
+    JC: simUCE454.fasta{0.131824},
+    JC: simUCE455.fasta{0.0418369},
+    JC: simUCE456.fasta{0.0893942},
+    JC: simUCE457.fasta{0.173114},
+    JC: simUCE458.fasta{0.174928},
+    JC+I{0.269438}: simUCE459.fasta{0.426466},
+    JC+I{0.659693}: simUCE46.fasta{0.123169},
+    JC: simUCE460.fasta{0.116489},
+    JC: simUCE461.fasta{0.0754399},
+    JC: simUCE462.fasta{0.0572501},
+    JC: simUCE463.fasta{0.191702},
+    K2P{0.597687}+FQ: simUCE464.fasta{0.250384},
+    JC: simUCE465.fasta{0.110666},
+    JC: simUCE466.fasta{0.232209},
+    JC: simUCE467.fasta{0.0852839},
+    JC: simUCE468.fasta{0.140398},
+    JC: simUCE469.fasta{0.0783264},
+    JC: simUCE47.fasta{0.0993522},
+    JC: simUCE470.fasta{0.154625},
+    JC: simUCE471.fasta{0.131948},
+    JC: simUCE472.fasta{0.122021},
+    JC: simUCE473.fasta{0.0894601},
+    JC: simUCE474.fasta{0.114901},
+    JC: simUCE475.fasta{0.23908},
+    JC: simUCE476.fasta{0.083897},
+    JC: simUCE477.fasta{0.117889},
+    JC: simUCE478.fasta{0.0614011},
+    JC: simUCE479.fasta{0.0978357},
+    JC: simUCE48.fasta{0.227711},
+    JC: simUCE480.fasta{0.114783},
+    JC: simUCE481.fasta{0.100827},
+    JC: simUCE482.fasta{0.120475},
+    JC: simUCE483.fasta{0.128946},
+    JC: simUCE484.fasta{0.203534},
+    JC: simUCE485.fasta{0.100768},
+    JC: simUCE486.fasta{0.0459886},
+    JC: simUCE487.fasta{0.0320474},
+    JC: simUCE488.fasta{0.054396},
+    JC: simUCE489.fasta{0.320436},
+    JC: simUCE49.fasta{0.0194946},
+    JC: simUCE490.fasta{0.171837},
+    JC: simUCE491.fasta{0.0572687},
+    JC: simUCE492.fasta{0.779636},
+    JC: simUCE493.fasta{0.0811747},
+    JC: simUCE494.fasta{0.189108},
+    JC: simUCE495.fasta{0.385987},
+    JC: simUCE496.fasta{0.151684},
+    JC: simUCE497.fasta{0.0614323},
+    JC: simUCE498.fasta{0.0670268},
+    JC: simUCE499.fasta{0.214442},
+    JC: simUCE5.fasta{0.0516669},
+    JC: simUCE50.fasta{0.149039},
+    JC: simUCE500.fasta{0.0459874},
+    JC: simUCE501.fasta{0.0278498},
+    JC: simUCE502.fasta{0.16034},
+    JC: simUCE503.fasta{0.0684051},
+    JC+G4{0.796682}: simUCE504.fasta{0.220519},
+    JC: simUCE505.fasta{0.103655},
+    JC: simUCE506.fasta{0.295063},
+    JC: simUCE507.fasta{0.320408},
+    JC: simUCE508.fasta{0.0824241},
+    JC: simUCE509.fasta{0.151719},
+    JC: simUCE51.fasta{0.162953},
+    JC: simUCE510.fasta{0.137446},
+    JC: simUCE511.fasta{0.26271},
+    JC: simUCE512.fasta{0.0713561},
+    JC: simUCE513.fasta{0.174489},
+    JC: simUCE514.fasta{0.233454},
+    JC: simUCE515.fasta{0.0376293},
+    JC: simUCE516.fasta{0.401414},
+    JC: simUCE517.fasta{0.106493},
+    JC: simUCE518.fasta{0.151899},
+    JC: simUCE519.fasta{0.0586192},
+    JC: simUCE52.fasta{0.157467},
+    JC: simUCE520.fasta{0.133465},
+    JC: simUCE521.fasta{0.201592},
+    JC: simUCE522.fasta{0.103505},
+    JC: simUCE523.fasta{0.252468},
+    JC: simUCE524.fasta{0.327326},
+    JC: simUCE525.fasta{0.179224},
+    JC: simUCE526.fasta{0.0404411},
+    JC: simUCE527.fasta{0.054463},
+    JC: simUCE528.fasta{0.301874},
+    JC: simUCE529.fasta{0.0432352},
+    JC: simUCE53.fasta{0.0798111},
+    JC: simUCE530.fasta{0.103732},
+    JC: simUCE531.fasta{0.22917},
+    JC: simUCE532.fasta{0.323476},
+    JC: simUCE533.fasta{0.18611},
+    JC: simUCE534.fasta{0.0501914},
+    JC: simUCE535.fasta{0.0571835},
+    JC: simUCE536.fasta{0.215674},
+    JC: simUCE537.fasta{0.2127},
+    JC: simUCE538.fasta{0.180186},
+    JC: simUCE539.fasta{0.266889},
+    JC: simUCE54.fasta{0.19326},
+    K2P{1.52136}+FQ: simUCE540.fasta{0.263434},
+    JC: simUCE541.fasta{0.0866663},
+    JC: simUCE542.fasta{0.168684},
+    JC: simUCE543.fasta{0.236011},
+    JC: simUCE544.fasta{0.224842},
+    JC: simUCE545.fasta{0.0894787},
+    JC: simUCE546.fasta{0.316258},
+    JC: simUCE547.fasta{0.154512},
+    JC: simUCE548.fasta{0.0937745},
+    JC: simUCE549.fasta{0.12609},
+    JC: simUCE55.fasta{0.143103},
+    JC: simUCE550.fasta{0.199121},
+    JC: simUCE551.fasta{0.134756},
+    JC: simUCE552.fasta{0.141733},
+    JC: simUCE553.fasta{0.145945},
+    JC: simUCE554.fasta{0.443155},
+    JC: simUCE555.fasta{0.223223},
+    JC: simUCE556.fasta{0.136069},
+    JC: simUCE557.fasta{0.058664},
+    JC: simUCE558.fasta{0.300239},
+    JC: simUCE559.fasta{0.0993663},
+    K2P{1.96564}+FQ: simUCE56.fasta{0.11919},
+    JC: simUCE560.fasta{0.116361},
+    JC: simUCE561.fasta{0.327883},
+    JC: simUCE562.fasta{0.0965323},
+    JC: simUCE563.fasta{0.103593},
+    JC: simUCE564.fasta{0.266627},
+    JC: simUCE565.fasta{0.103635},
+    F81: simUCE566.fasta{0.190159},
+    JC: simUCE567.fasta{0.047494},
+    JC: simUCE568.fasta{0.0515977},
+    JC: simUCE569.fasta{0.0825689},
+    JC: simUCE57.fasta{0.117793},
+    JC: simUCE570.fasta{0.102111},
+    JC: simUCE571.fasta{0.590926},
+    JC: simUCE572.fasta{0.103652},
+    JC: simUCE573.fasta{0.269724},
+    JC: simUCE574.fasta{0.0853057},
+    JC: simUCE575.fasta{0.132076},
+    JC: simUCE576.fasta{0.342357},
+    JC: simUCE577.fasta{0.0628024},
+    JC: simUCE578.fasta{0.037641},
+    JC: simUCE579.fasta{0.390238},
+    JC: simUCE58.fasta{0.233449},
+    JC: simUCE580.fasta{0.194248},
+    JC: simUCE581.fasta{0.237417},
+    JC: simUCE582.fasta{0.220373},
+    JC: simUCE583.fasta{0.0446153},
+    JC: simUCE584.fasta{0.058622},
+    JC: simUCE585.fasta{0.264862},
+    JC: simUCE586.fasta{0.173252},
+    JC: simUCE587.fasta{0.191707},
+    JC: simUCE588.fasta{0.0938243},
+    JC: simUCE589.fasta{0.154644},
+    JC+G4{2.26838}: simUCE59.fasta{0.44451},
+    JC: simUCE590.fasta{0.0334547},
+    JC: simUCE591.fasta{0.134909},
+    JC: simUCE592.fasta{0.259575},
+    JC: simUCE593.fasta{0.170447},
+    JC: simUCE594.fasta{0.0882577},
+    JC: simUCE595.fasta{0.190957},
+    JC: simUCE596.fasta{0.224598},
+    JC: simUCE597.fasta{0.0348577},
+    JC: simUCE598.fasta{0.120472},
+    JC: simUCE599.fasta{0.126166},
+    JC: simUCE6.fasta{0.390799},
+    JC: simUCE60.fasta{0.0937807},
+    JC: simUCE600.fasta{0.179233},
+    JC: simUCE601.fasta{0.0993989},
+    JC: simUCE602.fasta{0.0979869},
+    JC: simUCE603.fasta{0.0853697},
+    JC: simUCE604.fasta{0.0334191},
+    JC: simUCE605.fasta{0.086621},
+    JC: simUCE606.fasta{0.220546},
+    JC: simUCE607.fasta{0.127594},
+    JC: simUCE608.fasta{0.156183},
+    JC: simUCE609.fasta{0.0600315},
+    JC: simUCE61.fasta{0.40828},
+    JC: simUCE610.fasta{0.134813},
+    JC: simUCE611.fasta{0.140351},
+    JC: simUCE612.fasta{0.0488487},
+    JC: simUCE613.fasta{0.210396},
+    JC: simUCE614.fasta{0.124802},
+    JC: simUCE615.fasta{0.100722},
+    JC: simUCE616.fasta{0.381722},
+    JC: simUCE617.fasta{0.0811127},
+    JC: simUCE618.fasta{0.0685084},
+    JC: simUCE619.fasta{0.0996065},
+    JC: simUCE62.fasta{0.243159},
+    JC: simUCE620.fasta{0.227929},
+    JC: simUCE621.fasta{0.124776},
+    JC: simUCE622.fasta{0.144743},
+    JC: simUCE623.fasta{0.133225},
+    JC: simUCE624.fasta{0.0222766},
+    JC: simUCE625.fasta{0.0768545},
+    JC: simUCE626.fasta{0.146189},
+    JC: simUCE627.fasta{0.167451},
+    JC: simUCE628.fasta{0.11917},
+    JC: simUCE629.fasta{0.196177},
+    JC: simUCE63.fasta{0.0995083},
+    JC: simUCE630.fasta{0.0810427},
+    JC: simUCE631.fasta{0.147472},
+    JC: simUCE632.fasta{0.183317},
+    JC: simUCE633.fasta{0.0670345},
+    JC: simUCE634.fasta{0.0488126},
+    JC: simUCE635.fasta{0.069876},
+    JC: simUCE636.fasta{0.139002},
+    JC: simUCE637.fasta{0.0557908},
+    JC: simUCE638.fasta{0.12473},
+    JC: simUCE639.fasta{0.058584},
+    JC: simUCE64.fasta{0.0320431},
+    JC: simUCE640.fasta{0.164841},
+    JC: simUCE641.fasta{0.207636},
+    JC: simUCE642.fasta{0.188801},
+    JC: simUCE643.fasta{0.106507},
+    JC: simUCE644.fasta{0.14596},
+    JC: simUCE645.fasta{0.0222904},
+    JC: simUCE646.fasta{0.144727},
+    JC: simUCE647.fasta{0.15052},
+    JC: simUCE648.fasta{0.457802},
+    JC: simUCE649.fasta{0.174564},
+    JC: simUCE65.fasta{0.420247},
+    JC: simUCE650.fasta{0.0824942},
+    JC: simUCE651.fasta{0.0432209},
+    JC: simUCE652.fasta{0.143192},
+    JC: simUCE653.fasta{0.171742},
+    JC: simUCE654.fasta{0.41317},
+    JC: simUCE655.fasta{0.0923364},
+    JC: simUCE656.fasta{0.123407},
+    JC: simUCE657.fasta{0.154656},
+    JC: simUCE658.fasta{0.105071},
+    JC: simUCE659.fasta{0.104935},
+    JC: simUCE66.fasta{0.280888},
+    JC: simUCE660.fasta{0.250273},
+    JC: simUCE661.fasta{0.0811021},
+    JC: simUCE662.fasta{0.0628039},
+    JC: simUCE663.fasta{0.175948},
+    JC: simUCE664.fasta{0.310802},
+    JC: simUCE665.fasta{0.0810469},
+    JC: simUCE666.fasta{0.168708},
+    JC: simUCE667.fasta{0.106411},
+    JC: simUCE668.fasta{0.188789},
+    JC: simUCE669.fasta{0.126279},
+    JC: simUCE67.fasta{0.0838633},
+    JC: simUCE670.fasta{0.0798716},
+    JC+I{0.253607}: simUCE671.fasta{0.521424},
+    JC: simUCE672.fasta{0.124921},
+    JC: simUCE673.fasta{0.148846},
+    JC: simUCE674.fasta{0.105018},
+    JC: simUCE675.fasta{0.0812545},
+    JC: simUCE676.fasta{0.110807},
+    JC: simUCE677.fasta{0.0460091},
+    JC: simUCE678.fasta{0.11496},
+    JC: simUCE679.fasta{0.107909},
+    JC: simUCE68.fasta{0.0544193},
+    JC+G4{0.426544}: simUCE680.fasta{0.115345},
+    JC: simUCE681.fasta{0.290864},
+    JC: simUCE682.fasta{0.0994425},
+    JC: simUCE683.fasta{0.188769},
+    JC: simUCE684.fasta{0.0754197},
+    JC: simUCE685.fasta{0.191786},
+    JC: simUCE686.fasta{0.0487686},
+    JC: simUCE687.fasta{0.0600829},
+    JC: simUCE688.fasta{0.154688},
+    JC: simUCE689.fasta{0.218838},
+    JC: simUCE69.fasta{0.10211},
+    JC: simUCE690.fasta{0.0222663},
+    JC: simUCE691.fasta{0.0628662},
+    K2P{1.60788}+FQ: simUCE692.fasta{0.177496},
+    JC: simUCE693.fasta{0.119146},
+    JC: simUCE694.fasta{0.194644},
+    JC: simUCE695.fasta{0.235881},
+    JC: simUCE696.fasta{0.0572353},
+    JC: simUCE697.fasta{0.0894555},
+    JC: simUCE698.fasta{0.0139256},
+    JC: simUCE699.fasta{0.144599},
+    JC: simUCE7.fasta{0.0432277},
+    JC: simUCE70.fasta{0.190025},
+    JC: simUCE700.fasta{0.170444},
+    JC: simUCE701.fasta{0.0853571},
+    JC: simUCE702.fasta{0.119396},
+    JC: simUCE703.fasta{0.12645},
+    JC: simUCE704.fasta{0.0923102},
+    JC: simUCE705.fasta{0.347697},
+    JC: simUCE706.fasta{0.15018},
+    JC: simUCE707.fasta{0.192948},
+    JC: simUCE708.fasta{0.137503},
+    JC+I{0.43173}: simUCE709.fasta{0.241912},
+    JC: simUCE71.fasta{0.183441},
+    JC: simUCE710.fasta{0.0320506},
+    JC: simUCE711.fasta{0.0838491},
+    JC: simUCE712.fasta{0.193385},
+    JC: simUCE713.fasta{0.0656155},
+    JC+I{0.339956}: simUCE714.fasta{0.330426},
+    JC: simUCE715.fasta{0.0614156},
+    JC: simUCE716.fasta{0.398862},
+    JC: simUCE717.fasta{0.264999},
+    JC: simUCE718.fasta{0.250605},
+    JC: simUCE719.fasta{0.288107},
+    JC: simUCE72.fasta{0.050221},
+    JC: simUCE720.fasta{0.0740169},
+    JC: simUCE721.fasta{0.0418245},
+    JC: simUCE722.fasta{0.0853074},
+    JC: simUCE723.fasta{0.0782657},
+    JC: simUCE724.fasta{0.1008},
+    JC: simUCE725.fasta{0.151687},
+    JC: simUCE726.fasta{0.0684184},
+    JC: simUCE727.fasta{0.0362133},
+    JC: simUCE728.fasta{0.480333},
+    JC: simUCE729.fasta{0.197735},
+    JC: simUCE73.fasta{0.0530297},
+    JC: simUCE730.fasta{0.301727},
+    JC: simUCE731.fasta{0.1037},
+    JC: simUCE732.fasta{0.143442},
+    JC: simUCE733.fasta{0.150298},
+    JC: simUCE734.fasta{0.131936},
+    JC: simUCE735.fasta{0.168903},
+    JC: simUCE736.fasta{0.107829},
+    JC: simUCE737.fasta{0.124836},
+    JC: simUCE738.fasta{0.0740356},
+    JC: simUCE739.fasta{0.131919},
+    JC: simUCE74.fasta{0.20602},
+    JC: simUCE740.fasta{0.100744},
+    JC: simUCE741.fasta{0.0488089},
+    JC: simUCE742.fasta{0.297636},
+    JC: simUCE743.fasta{0.310474},
+    JC: simUCE744.fasta{0.123419},
+    JC: simUCE745.fasta{0.110673},
+    JC: simUCE746.fasta{0.0796565},
+    JC: simUCE747.fasta{0.129195},
+    JC: simUCE748.fasta{0.31386},
+    JC: simUCE749.fasta{0.133569},
+    JC: simUCE75.fasta{0.0993425},
+    JC: simUCE750.fasta{0.114976},
+    JC: simUCE751.fasta{0.0557996},
+    JC: simUCE752.fasta{0.0600031},
+    JC: simUCE753.fasta{0.259193},
+    JC: simUCE754.fasta{0.50602},
+    JC: simUCE755.fasta{0.0236657},
+    JC: simUCE756.fasta{0.484845},
+    JC: simUCE757.fasta{0.0557773},
+    JC: simUCE758.fasta{0.138914},
+    JC: simUCE759.fasta{0.222204},
+    JC: simUCE76.fasta{0.0740237},
+    JC: simUCE760.fasta{0.0600012},
+    JC: simUCE761.fasta{0.259342},
+    JC: simUCE762.fasta{0.384784},
+    JC: simUCE763.fasta{0.0432339},
+    JC: simUCE764.fasta{0.171755},
+    JC: simUCE765.fasta{0.20178},
+    JC: simUCE766.fasta{0.282364},
+    JC: simUCE767.fasta{0.31826},
+    JC: simUCE768.fasta{0.0474173},
+    JC: simUCE769.fasta{0.0446163},
+    JC+I{0.147189}: simUCE77.fasta{0.974592},
+    JC: simUCE770.fasta{0.130327},
+    JC: simUCE771.fasta{0.298947},
+    JC: simUCE772.fasta{0.417239},
+    JC: simUCE773.fasta{0.0824605},
+    JC: simUCE774.fasta{0.23589},
+    JC: simUCE775.fasta{0.128988},
+    JC: simUCE776.fasta{0.105035},
+    JC: simUCE777.fasta{0.131867},
+    JC: simUCE778.fasta{0.16177},
+    JC: simUCE779.fasta{0.0642694},
+    JC: simUCE78.fasta{0.0895558},
+    JC: simUCE780.fasta{0.136153},
+    JC: simUCE781.fasta{0.120464},
+    JC: simUCE782.fasta{0.0895208},
+    JC: simUCE783.fasta{0.0516647},
+    JC+I{0.382528}: simUCE784.fasta{0.256162},
+    JC: simUCE785.fasta{0.0628869},
+    JC: simUCE786.fasta{0.23198},
+    JC: simUCE787.fasta{0.194674},
+    JC: simUCE788.fasta{0.0501863},
+    JC: simUCE789.fasta{0.160238},
+    JC: simUCE79.fasta{0.129168},
+    JC: simUCE790.fasta{0.114953},
+    JC: simUCE791.fasta{0.265531},
+    JC: simUCE792.fasta{0.029258},
+    JC: simUCE793.fasta{0.352083},
+    JC: simUCE794.fasta{0.138925},
+    JC: simUCE795.fasta{0.0740568},
+    JC: simUCE796.fasta{0.185945},
+    JC: simUCE797.fasta{0.18285},
+    JC: simUCE798.fasta{0.0236745},
+    JC: simUCE799.fasta{0.295022},
+    JC: simUCE8.fasta{0.210578},
+    JC: simUCE80.fasta{0.0167302},
+    JC: simUCE800.fasta{0.0167127},
+    JC: simUCE81.fasta{0.106396},
+    JC: simUCE82.fasta{0.0557988},
+    JC: simUCE83.fasta{0.0712553},
+    JC: simUCE84.fasta{0.240471},
+    JC: simUCE85.fasta{0.120485},
+    JC: simUCE86.fasta{0.188915},
+    JC: simUCE87.fasta{0.136511},
+    JC: simUCE88.fasta{0.034824},
+    JC: simUCE89.fasta{0.0474019},
+    JC: simUCE9.fasta{0.260585},
+    JC: simUCE90.fasta{0.0572162},
+    JC: simUCE91.fasta{0.0418091},
+    JC: simUCE92.fasta{0.032049},
+    JC: simUCE93.fasta{0.0208838},
+    K2P{2.54742}+FQ: simUCE94.fasta{0.0698822},
+    JC: simUCE95.fasta{0.110603},
+    JC: simUCE96.fasta{0.057219},
+    JC: simUCE97.fasta{0.075449},
+    JC: simUCE98.fasta{0.305601},
+    JC: simUCE99.fasta{0.0951893};
+end;
