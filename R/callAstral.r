@@ -8,7 +8,8 @@
 #' most compatible with quartets sampled from the input genetrees. See [Astral's github](https://github.com/smirarab/ASTRAL)
 #' for more info on the program.
 #'
-#' @param help Boolean. If TRUE, all other inputs are ignored and the function simply prints Astral's help message
+#' @param help Boolean. If TRUE, all other inputs are ignored and the function simply prints Astral's help message.
+#' Note that the vast majority of Astral's functions aren't available through callAstral(). The ability to pass custom options may be added in the future if requested.
 #' @param trees Either a path to a file containing newick formatted genetrees or an ape multiPhylo object containing genetrees. Used as input for Astral
 #' @param outfile Path to file where output tree from Astral will be stored
 #' @param astralPath Path to the Astral .jar file; if not set, checks the global astralPath option (set by [UCETools::getAstral()]) for its location
@@ -25,9 +26,16 @@
 
 callAstral <- function(trees, outfile, astralPath, annotation = 3, loadOutputTree = FALSE, help = FALSE){
     ## Help overrides all other options. Print astral --help and return.
+    if(missing(astralPath)){
+        if(!is.null(getOption("astralPath"))){
+            astralPath = getOption("astralPath")
+        } else {
+            stop("'astralPath' argument not set AND astralPath global option not set. Try running getAstral() first.")
+        }
+    }
     if(help){
-        system2(command = "java", args = c("--help"), wait = TRUE)
-        return()
+        # Astral actually returns an exit status of 1 when you ask for its help message?
+        return(system2(command = "java", args = c("-jar", shQuote(astralPath), "--help"), wait = TRUE))
     }
     ## validate inputs
     if(missing(trees)){
@@ -46,13 +54,6 @@ callAstral <- function(trees, outfile, astralPath, annotation = 3, loadOutputTre
         stop("'outfile' argument is required.")
     }
     # maybe should add test of outfile being a valid file path? How though?
-    if(missing(astralPath)){
-        if(!is.null(getOption("astralPath"))){
-            astralPath = getOption("astralPath")
-        } else {
-            stop("'astralPath' argument not set AND astralPath global option not set.")
-        }
-    }
 
     ## Test if trees inherits multiPhylo
     # Need a temp file if input is multiPhylo
@@ -73,3 +74,4 @@ callAstral <- function(trees, outfile, astralPath, annotation = 3, loadOutputTre
         return(read.tree(outfile))
     }
 }
+

@@ -54,6 +54,8 @@ getAstral <- function(install.dir = getwd(), method){
     cat(paste("Downloaded ASTRAL v5.7.1 to ", install.dir, "\n\n"))
 
     ## Set global astralPath var
-    options(astralPath = file.path(install.dir,"ASTRAL-5.7.1","Astral","astral.5.7.1.jar"))
+    # Had to add 'normalizePath()' here because of inconsistency between file.path(), getwd(), and tempdir()
+    # This seems to be new since I wrote this two years ago; I think file.path() behaviour changed on Windows? 2024-06-21
+    options(astralPath = normalizePath(file.path(install.dir,"ASTRAL-5.7.1","Astral","astral.5.7.1.jar")))
     cat(paste("Global 'astralPath' option set to ", getOption("astralPath"), "\n"))
 }

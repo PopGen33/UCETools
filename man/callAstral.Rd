@@ -24,7 +24,8 @@ callAstral(
 
 \item{loadOutputTree}{Boolean. If TRUE, function returns the output Astral tree as an \link{ape} phylo object. If FALSE, the function returns nothing}
 
-\item{help}{Boolean. If TRUE, all other inputs are ignored and the function simply prints Astral's help message}
+\item{help}{Boolean. If TRUE, all other inputs are ignored and the function simply prints Astral's help message.
+Note that the vast majority of Astral's functions aren't available through callAstral(). The ability to pass custom options may be added in the future if requested.}
 }
 \value{
 If help is TRUE, the function prints Astral's help message and returns nothing. If loadOutputTree is FALSE, the function returns nothing and simply runs Astral. If loadOutputTree is TRUE, the function returns the tree output from Astral as an \link{ape} phylo object.
