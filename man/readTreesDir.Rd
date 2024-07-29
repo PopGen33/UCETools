@@ -20,14 +20,12 @@ An \link{ape} multiPhylo object containing the trees that were read from the dir
 \description{
 Reads a directory of genetrees in newick format where each file contains one genetree and returns a \link{ape} multiphylo object where each
 genetree is named the same as the file it was read from (e.g. when reading a file 'UCEtree01.treefile', the corresponding tree
-in the multiphylo object will be named 'UCEtree01.treefile). This function mainly exists to make using \link{addTreesToPISData} easier.
+in the multiphylo object will be named 'UCEtree01.treefile). This function mainly exists to make using \if{html}{\out{<futureFunction>}} easier.
 }
 \details{
 The way \link{ape}'s read.tree() is implemented, text preceding the first '(' is treated as the name of the tree. However, the way
 I've written this, I assume there is no text preceding the first '('. If there is, this will result in trees being named like '\if{html}{\out{<filename>}} \if{html}{\out{<precedingText>}}'.
-If this proves to be an issue for you, please submit an issue on the github for this package. The likely solution will be ignoring text preceding the first '(' in
-the file, but, again, that isn't implemented yet.
 }
 \seealso{
-\link[ape:read.tree]{ape::read.tree} \link{addTreesToPISData}
+\link[ape:read.tree]{ape::read.tree}
 }

@@ -1,9 +1,10 @@
 test_that("Test that getPisCounts returns correctly", {
+    # R doesn't like tests running on more than 2 cores?
     # Load alignments
     alignmentDir <- system.file("extdata", "UCE_aligns", package = "UCETools")
     # Check equality of useAmbig True/False; should be equal on this dataset
-    ex_PISCounts <- getPisCounts(alignmentDir)
-    ex_PISCounts_amb <- getPisCounts(alignmentDir, useAmbiguity = TRUE)
+    ex_PISCounts <- getPisCounts(alignmentDir, threads = 2)
+    ex_PISCounts_amb <- getPisCounts(alignmentDir, useAmbiguity = TRUE, threads = 2)
     expect_equal(ex_PISCounts,ex_PISCounts_amb)
     # Check summary stats of example data are equal to expectations
     expect_equal(min(unlist(ex_PISCounts[,3])), 0)
