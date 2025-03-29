@@ -62,7 +62,7 @@ countParsimonyInformative <- function(DNAbinObj, calc = "absolute", useAmbiguity
             # I'm sure there's some better way of doing this...
             pairs <- RcppAlgos::comboGeneral(lenNumTable, m = 2) # All possible pairs of unique chars (referenced by indices of numTable) in the col
             compRes <- vector("logical", nrow(pairs))
-            for(i in 1:nrow(pairs)){
+            for(i in seq_len(nrow(pairs))){
                 # Ugly, but works; also, seems to work just calling as.raw() on the string from names rather than making integer first
                 # This is my R implementation of DifferentBase(a,b) described in the appendix of the DNAbin document here: https://emmanuelparadis.github.io/misc/BitLevelCodingScheme_20April2007.pdf
                 # TRUE implies the characters are surely different
@@ -72,16 +72,16 @@ countParsimonyInformative <- function(DNAbinObj, calc = "absolute", useAmbiguity
                 # integer form of the DNAbin encoding... This is awful
             }
 
-            # If all comparisons are false; col can't be parsimony informative
+            # If all comparisons are false (no characters are surely different), col can't be parsimony informative
             if(!any(compRes)){
                 return(FALSE)
             }
 
             # If any character with a count >=2 is surely different than any other character with a count >=2, the site is parsimony informative
             # First remove pairs that aren't different from each other
-            pairs <- pairs[compRes,, drop = FALSE]
+            pairs <- pairs[compRes, , drop = FALSE]
             # Then, if both members of a pair have counts greater than 2, return TRUE
-            for(row in 1:nrow(pairs)){
+            for(row in seq_len(nrow(pairs))){
                 if((numTable[pairs[row,][1]] > 1) && (numTable[pairs[row,][2]] > 1)){
                     return(TRUE)
                 }
@@ -96,8 +96,9 @@ countParsimonyInformative <- function(DNAbinObj, calc = "absolute", useAmbiguity
     }else{
         ## my own slightly different implementation of par.inf from inside the pis() function:
         ## https://rdrr.io/cran/ips/src/R/pis.R
-        ## My version ignores '?' properly by only handling the 4 dna bases
+        ## This version ignores '?' properly by only handling the 4 dna bases
         ## Mine is also very slightly faster on average (2% faster was not worth the time I spent thinking about it...)
+        ## TODO: Maybe just drop any non-AGCT characters and then use the pars.inf above for complete consistancy?
         pars.inf <- function(charCol){
             validChars <- c('a', 'g', 'c', 't')
             charTable <- table(charCol)

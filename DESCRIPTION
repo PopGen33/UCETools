@@ -8,11 +8,12 @@ Description: A package to filter DNA alignments based on counts of parsimony inf
 			The sorting methods requires the alignments to be in single directory in seperate files and must be in FASTA or NEXUS format.
 			This also provides a simple interface to ASTRAL that can be used with the 'ape' package's multiPhylo object that stores sets of phylogenetic trees.
 Depends:
-	R (>= 4.0),
+	R (>= 4.1),
 	ape
 Imports:
 	parallel,
-	RcppAlgos
+	RcppAlgos,
+	TreeDist
 SystemRequirements:
 	java (>= 8)
 License: GPL (>= 3) + file LICENSE
