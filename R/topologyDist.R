@@ -28,6 +28,10 @@ TreeDistWrapper <- function(combo, treeSet){
 #' @param treeSet A set of trees as an ape multiPhylo object. See, for example, the [ape::read.tree] documentation.
 #' @param threads Number of simultaneous processes used for calculating tree distances. By
 #' default, this uses the number of cores returned by [parallel::detectCores].
+#' @param targetTree Target tree (as an ape 'phylo' object) to which the treeSet is compared. If set, this
+#' changes the behaviour of the function substantially. Instead of returning distances between pairs of trees
+#' in treeSet the function will
+#' return distances between the trees in treeSet and the targetTree.
 #' @param samples Integer. If not set (default), distance between all possible sets of trees are returned. If set,
 #' a random sample of those distances (with replacement) of size 'samples' is returned instead.
 #'
@@ -38,26 +42,42 @@ TreeDistWrapper <- function(combo, treeSet){
 #' @importFrom  parallel makePSOCKcluster detectCores parApply stopCluster clusterEvalQ
 #'
 #' @export
-topologyDistWithin <- function(treeSet, threads = detectCores(), samples = NULL){
-    # Make cluster (for parallelism that works on Windows)
-    cl <- makePSOCKcluster(threads)
-    clusterEvalQ(cl = cl, library(TreeDist)) # Because the virtual nodes spawn with only base packages loaded
-
-    # All possible tree combinations (expressed as combinations of indices)
-    combos <- comboGeneral(length(treeSet), m = 2, nThreads = threads)
-
-    # If samples isn't zero, sample <samples> rows from the combos matrix with replacement
-    if(!missing(samples)){
-        if(!inherits(samples, "numeric") || samples %% 1 != 0){
-            stop("'samples' argument must be integer if set.")
+topologyDist <- function(treeSet, threads = detectCores(), targetTree, samples){
+    if(!missing(targetTree)){
+        if(!inherits(targetTree, "phylo")){
+            stop("'targetTree' must be an object of class 'phylo'.")
         }
-        combos <- combos[sample(nrow(combos), size = samples, replace = TRUE),]
+        # Get distances to the targetTree
+        distances <- TreeDistance(targetTree, treeSet)
+        # If samples is set, return that many distances; otherwise return all
+        if(!missing(samples)){
+            if(!inherits(samples, "numeric") || samples %% 1 != 0){
+                stop("'samples' argument must be integer if set.")
+            }
+            distances <- sample(distances, size = samples, replace = TRUE)
+        }
+        return(distances)
+    }else{
+        # Make cluster (for parallelism that works on Windows)
+        cl <- makePSOCKcluster(threads)
+        clusterEvalQ(cl = cl, library(TreeDist)) # Because the virtual nodes spawn with only base packages loaded
+
+        # All possible tree combinations (expressed as combinations of indices)
+        combos <- comboGeneral(length(treeSet), m = 2, nThreads = threads)
+
+        # If samples isn't zero, sample <samples> rows from the combos matrix with replacement
+        if(!missing(samples)){
+            if(!inherits(samples, "numeric") || samples %% 1 != 0){
+                stop("'samples' argument must be integer if set.")
+            }
+            combos <- combos[sample(nrow(combos), size = samples, replace = TRUE),]
+        }
+
+        result <- parApply(cl, FUN = TreeDistWrapper, MARGIN = 1, X = combos, treeSet)
+
+        # Stop cluster
+        stopCluster(cl)
+
+        return(result)
     }
-
-    result <- parApply(cl, FUN = TreeDistWrapper, MARGIN = 1, X = combos, treeSet)
-
-    # Stop cluster
-    stopCluster(cl)
-
-    return(result)
 }

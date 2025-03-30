@@ -4,3 +4,7 @@
 #'
 #' @description
 #' NOT IMPLETMENTED YET
+#' @export
+addTreesToPISData <- function(){
+    ##TODO: Actually implement this
+}
