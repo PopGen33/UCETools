@@ -15,6 +15,19 @@ TreeDistWrapper <- function(combo, treeSet){
     return(TreeDist::TreeDistance(treeSet[combo[1]], treeSet[combo[2]]))
 }
 
+#' Get Names For Distances function
+#'
+#' @description
+#' Internal function getting names for the vector returned by toplogyDist for use with parApply
+#' @param combo a vector containing exactly 2 items: the indices of a pair of trees. Used to select the trees from treeSet and extract their names
+#' @param treeSet an ape multiPhylo object containing the trees to which the indices in combo refer
+#' @returns description Returns a distance between the pair of trees
+#' @keywords internal
+#' @export
+getNamesForDistances <- function(combo, treeSet){
+    return(paste0(names(treeSet[combo[1]]), "|", names(treeSet[combo[2]])))
+}
+
 #' Get distances between trees using [TreeDist::TreeDistance]
 #'
 #' @description
@@ -34,6 +47,9 @@ TreeDistWrapper <- function(combo, treeSet){
 #' return distances between the trees in treeSet and the targetTree.
 #' @param samples Integer. If not set (default), distance between all possible sets of trees are returned. If set,
 #' a random sample of those distances (with replacement) of size 'samples' is returned instead.
+#' @param withNames Boolean. If true, the vector of distances is returned with names such that "tree1|tree2" is the name
+#' for the distance from tree1 to tree2. Note that this is unused if the targetTree argument is used (all distances are
+#' to the targetTree)
 #'
 #' @returns a vector containing generalized Robinson-Foulds distances
 #'
@@ -42,7 +58,7 @@ TreeDistWrapper <- function(combo, treeSet){
 #' @importFrom  parallel makePSOCKcluster detectCores parApply stopCluster clusterEvalQ
 #'
 #' @export
-topologyDist <- function(treeSet, threads = detectCores(), targetTree, samples){
+topologyDist <- function(treeSet, threads = detectCores(), targetTree, samples, withNames = FALSE){
     if(!missing(targetTree)){
         if(!inherits(targetTree, "phylo")){
             stop("'targetTree' must be an object of class 'phylo'.")
@@ -73,7 +89,15 @@ topologyDist <- function(treeSet, threads = detectCores(), targetTree, samples){
             combos <- combos[sample(nrow(combos), size = samples, replace = TRUE),]
         }
 
+        # Get the distances
         result <- parApply(cl, FUN = TreeDistWrapper, MARGIN = 1, X = combos, treeSet)
+
+        # Name the distances (if requested)
+        if(withNames){
+            # name the results vector like "tree1|tree2" = dist(tree1, tree2)
+            namesVect <- parApply(cl, FUN = getNamesForDistances, MARGIN = 1, X = combos, treeSet)
+            names(result) <- namesVect
+        }
 
         # Stop cluster
         stopCluster(cl)

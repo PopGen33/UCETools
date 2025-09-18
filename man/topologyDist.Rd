@@ -4,7 +4,13 @@
 \alias{topologyDist}
 \title{Get distances between trees using \link[TreeDist:TreeDistance]{TreeDist::TreeDistance}}
 \usage{
-topologyDist(treeSet, threads = detectCores(), targetTree, samples)
+topologyDist(
+  treeSet,
+  threads = detectCores(),
+  targetTree,
+  samples,
+  withNames = FALSE
+)
 }
 \arguments{
 \item{treeSet}{A set of trees as an ape multiPhylo object. See, for example, the \link[ape:read.tree]{ape::read.tree} documentation.}
@@ -19,6 +25,10 @@ return distances between the trees in treeSet and the targetTree.}
 
 \item{samples}{Integer. If not set (default), distance between all possible sets of trees are returned. If set,
 a random sample of those distances (with replacement) of size 'samples' is returned instead.}
+
+\item{withNames}{Boolean. If true, the vector of distances is returned with names such that "tree1|tree2" is the name
+for the distance from tree1 to tree2. Note that this is unused if the targetTree argument is used (all distances are
+to the targetTree)}
 }
 \value{
 a vector containing generalized Robinson-Foulds distances
