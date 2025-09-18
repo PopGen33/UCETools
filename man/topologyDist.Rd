@@ -16,7 +16,8 @@ topologyDist(
 \item{treeSet}{A set of trees as an ape multiPhylo object. See, for example, the \link[ape:read.tree]{ape::read.tree} documentation.}
 
 \item{threads}{Number of simultaneous processes used for calculating tree distances. By
-default, this uses the number of cores returned by \link[parallel:detectCores]{parallel::detectCores}.}
+default, this uses the number of cores returned by \link[parallel:detectCores]{parallel::detectCores}. If you are getting an unseriallize
+error, try running with threads = 1. This reduces memory usage by using apply() instead of parApply().}
 
 \item{targetTree}{Target tree (as an ape 'phylo' object) to which the treeSet is compared. If set, this
 changes the behaviour of the function substantially. Instead of returning distances between pairs of trees
