@@ -40,8 +40,7 @@ getNamesForDistances <- function(combo, treeSet){
 #'
 #' @param treeSet A set of trees as an ape multiPhylo object. See, for example, the [ape::read.tree] documentation.
 #' @param threads Number of simultaneous processes used for calculating tree distances. By
-#' default, this uses the number of cores returned by [parallel::detectCores]. If you are getting an unseriallize
-#' error, try running with threads = 1. This reduces memory usage by using apply() instead of parApply().
+#' default, this uses the number of cores returned by [parallel::detectCores].
 #' @param targetTree Target tree (as an ape 'phylo' object) to which the treeSet is compared. If set, this
 #' changes the behaviour of the function substantially. Instead of returning distances between pairs of trees
 #' in treeSet the function will
@@ -75,12 +74,9 @@ topologyDist <- function(treeSet, threads = detectCores(), targetTree, samples, 
         }
         return(distances)
     }else{
-
-        if(threads > 1){
-            # Make cluster (for parallelism that works on Windows)
-            cl <- makePSOCKcluster(threads)
-            clusterEvalQ(cl = cl, library(TreeDist)) # Because the virtual nodes spawn with only base packages loaded
-        }
+        # Make cluster (for parallelism that works on Windows)
+        cl <- makePSOCKcluster(threads)
+        clusterEvalQ(cl = cl, library(TreeDist)) # Because the virtual nodes spawn with only base packages loaded
 
         # All possible tree combinations (expressed as combinations of indices)
         combos <- comboGeneral(length(treeSet), m = 2, nThreads = threads)
@@ -94,28 +90,17 @@ topologyDist <- function(treeSet, threads = detectCores(), targetTree, samples, 
         }
 
         # Get the distances
-        if(threads > 1){
-            result <- parApply(cl, FUN = TreeDistWrapper, MARGIN = 1, X = combos, treeSet)
-        }else{
-            result <- apply(FUN = TreeDistWrapper, MARGIN = 1, X = combos, treeSet)
-        }
-
+        result <- parApply(cl, FUN = TreeDistWrapper, MARGIN = 1, X = combos, treeSet)
 
         # Name the distances (if requested)
         if(withNames){
             # name the results vector like "tree1|tree2" = dist(tree1, tree2)
-            if(threads > 1){
-                namesVect <- parApply(cl, FUN = getNamesForDistances, MARGIN = 1, X = combos, treeSet)
-            }else{
-                namesVect <- apply(FUN = getNamesForDistances, MARGIN = 1, X = combos, treeSet)
-            }
+            namesVect <- parApply(cl, FUN = getNamesForDistances, MARGIN = 1, X = combos, treeSet)
             names(result) <- namesVect
         }
 
         # Stop cluster
-        if(threads > 1){
-            stopCluster(cl)
-        }
+        stopCluster(cl)
 
         return(result)
     }
